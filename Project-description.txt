@@ -1,0 +1,151 @@
+In this project, you will build a generative AI application that helps users work more effectively with digital knowledge – notes, PDFs, recordings, screenshots, etc..
+
+First, you will form a group of up to 5 people and create a project plan. In the plan you will define a domain you're interested in and identify a specific challenge within it. You will also review project plans from other groups and provide peer feedback. In a mid-term interview we will discuss your project plan together, address any questions or obstacles and help you scope the project. Then you will build a prototype that addresses your identified problem and submit the code and a technical report that explains your approach and evaluates how well it works.
+
+0. Timeline
+22.10.2025 (Wed.)	Presentation of the project
+22.10.2025 (Wed.) - 02.11.2025 (Sun.)	Group Formation (People who opted in to random group assignment, will be assigned till Wed. 05.11.2025)
+19.11.2025 (Wed.) 23:59 	Deadline Project Plan Submission
+20.11.2025 (Thu.) 00:00 - 30.11.2025 (Sun.) 23:59	Peer Reviewing
+01.12.2025 (Mo.) - 13.12.2025 (Sun.)	Mid Term Interviews
+21.01.2026 (Wed.) 23:59	Final Submissions
+ 
+1. Grading Overview
+You can get up to 50 points in the group project. 50% of the overall project points  (i.e. 25points) are required to pass the course. Attendance of all group members at the mid-term interview is required to pass the course.
+
+Project Plan including compulsory Mid-Term Interview (10p)
+Peer Reviews (5p)
+Report + Code (35p)
+ 
+2. Expectation
+Our expectations and final evaluation are based on groups of 4. You are free to do the project alone, in groups of 2, 3, 4 or 5 people. We expect you to spend 4 x (80h per group member) = 320h in total on this project together in your group.
+
+ 
+3. Group Formation
+You may use the Group Formation Forum in TUWEL to find a group
+Register for a group using the Group Formation widget in TUWEL.
+If you want to do the project alone, just register for an empty group 
+Please do not join groups where you have not talked to your peers before
+If you want to be randomly allocated to a group register for the group: Random Group Assignment.
+If you do not want to receive a certificate for this course, do not register for a group
+If you miss the group registration deadline, you will not be able to participate in the group project. We only randomly allocate people who have registered for the 'Random Group Assignment' group.
+ 
+4. Project Related Communication
+In case you write us an e-mail about your project please always add your group number in the subject.
+
+ 
+5. Getting Started
+The first thing you will hand in as a group is a single .pdf document (maximum 2000 words) – the project plan.
+
+5.1. Project Plan
+The project plan should cover the following elements:
+
+5.1.1. Users
+First, you will identify and describe the specific user group (researchers, students, professionals, teams, individuals, …) you target, their goals (learning, decision-making, collaboration, creativity, productivity, …) and workflows. We encourage you to choose something related to your own life so that it's actually useful to you.
+
+5.1.2. Data
+After you have decided on your target group, explain what information those users have and where it lives. This could be structured data (spreadsheets, databases, forms, …), semi- or unstructured text (markdown notes, PDFs …) or other media types like handwritten notes, audio recordings, images and may include metadata (timestamps, tags, …). 
+
+Additionally, describe how information is organised in these dimensions:
+
+Granularity: Are ideas atomic or scattered? (one concept per note vs. long documents)
+Connections: Are relationships explicit (links, tags) or implicit (must be inferred)?
+Completeness: Are ideas polished or fragmented?
+Context: Is there enough metadata to understand when/why/how something was created?
+Heterogeneity: Are there multiple formats from multiple sources? Is the format consistent?
+Note: Given the diversity of the projects you are responsible for sourcing your own dataset. You can use your own data (e.g. personal notes, research materials, meeting recordings, project documentation, chat logs),  find an existing public dataset (e.g. Wikipedia dumps, public knowledge bases, etc.), create synthetic/sample data or any combination of that. Privacy note: If using personal data, you must be willing to share it with course staff for evaluation. Ensure that you are allowed to use the data with generative models.
+
+Your dataset should be large enough to enable meaningful testing of your system, but not so large that data collection dominates the time allocated to your project. Your proposal should justify the size of your dataset based on your evaluation needs.   to collect and prepare the data. If you are spending more than this, you should reconsider your scope.
+
+5.1.3. The Problem
+Now that you've identified your users and their data, explain what core challenge you want to tackle. What specific problem do your users face when working with their data? You may choose to address one problem in depth or explore multiple related problems more broadly. Potential problems may include:
+
+Retrieval: "I know I wrote something about X, but can't find it"
+Connection: "I didn't realize these ideas were related"
+Synthesis: "I have lots of notes but can't see the big picture"
+Input friction: "Capturing thoughts takes too much effort"
+Stale knowledge: "Important information gets buried over time"
+Collaboration gaps: "Team knowledge lives in individual heads"
+…
+5.1.4. The Solution
+Concept
+First describe which tasks your system will perform to address the problem(s) identified above at a conceptual level. Focus on what the system does, not how it works technically. Potential tasks may include
+
+Understand: Parse, extract, enrich the raw information
+Retrieve: Find relevant information based on queries or context
+Connect: Identify relationships, patterns, clusters
+Surface: Proactively present relevant information without explicit queries
+Generate: Create summaries, insights, new artifacts from existing knowledge
+Augment: Help users create better/richer knowledge artifacts
+Track: Monitor knowledge evolution, gaps, growth
+…
+User Interface
+Describe the interface users will use to interact with your system. You have to choose one of those:
+
+Web application
+Cross-platform desktop application
+Browser plugin/extension
+Unix-based terminal application
+Jupyter Notebook
+Others upon request (send us an email with your proposal and justification)
+Briefly explain why this interface makes sense for your users and their workflow.
+
+Technical approach
+Identify 1-3 specific technical challenges or research questions that are critical to making your system work. Find some inspiration in the appendix section below.
+
+5.1.7. Evaluation
+Describe how you will evaluate the performance of your system. Start by defining what "success" looks like for your specific system; be concrete and measurable.
+
+Choose relevant metrics like accuracy, speed, relevance of results (e.g., retrieval precision/recall, ranking metrics, embedding quality, etc.). You do not need to include qualitative metrics like usability or user satisfaction. We do not expect a full fledged statistical evaluation. The main focus should be tackling the core problem, not building a evaluation framework.
+
+5.1.8. Appendix (Inspiration for technical challenges you might focus on)
+The concepts below are wide ranged and in parts quite technical. We do not expect you to understand all of them. They solely act as food for thought if you are thinking about the technical details of your project.
+
+Retrieval & Search:
+If your core problem involves finding relevant information, you may  investigate: different embedding models, chunking strategies, retrieval 
+metrics for semantic search, agent-based retrieval, hybrid search (combining lexical and semantic paradigms), query enhancements (expansion, rewriting, multi-query generation), or smart preprocessing (extracting metadata, augmenting notes with context).
+
+Proactive Surfacing & Context-Awareness:
+If your system should surface relevant information without explicit queries, you may investigate: activity-based recommendations (what you're working on, recent searches, time of day), identifying clusters of related notes,  detecting topics mentioned frequently but lacking depth, finding unanswered questions, or recommending unexpected connections between distant topics.
+
+Collaborative Knowledge Management:
+If you're working with multi-user knowledge, you may investigate: merging notes from different authors while preserving perspectives, detecting and reconciling contradictions, identifying knowledge gaps between contributors, tracking consensus vs. divergent viewpoints, attributing insights to specific contributors, surfacing complementary knowledge, or detecting collaboration opportunities based on overlapping interests.
+
+Understanding & Structuring:
+If your system needs to parse or enrich raw information, you may  investigate: dialogue-based note creation (e.g., Socratic questioning),  automatic extraction of key ideas, entity and relationship extraction, metadata generation, or transforming unstructured input into structured  knowledge artifacts.
+
+Connection Discovery:
+If your system should identify relationships between information, you may investigate: embedding similarity-based linking, entity-based linking (notes mentioning same topics/people), temporal patterns, knowledge graph construction, causal relationship detection, or conversation threading.
+
+5.2 Peer Reviews
+Each group will review the project plans of 4 other groups. Each review will earn up to 1.25 points. You can pass the project (and course) without submitting any reviews. However, we strongly recommend completing them, as this will help your colleagues and give you the opportunity to learn from other approaches. You will be able to see the peer reviews you receive, and we will also discuss them in the mid term interview.
+
+We will submit your reviews on TUWEL; please use the provided form as a template for the expected structure.
+
+5.3 Mid Term Interview
+You will book a 15min time slot. In this slot we will use your proposal and your colleagues' peer reviews to discuss your project. This is not intended as a test, but rather an opportunity to remove any roadblocks and help you clarify your project. No additional formal submission required. Physical attendance is mandatory for all group members.
+
+
+5.4 Final Hand In
+As a group you will upload a single .zip file containing:
+
+The code necessary to run your application. If your setup is more complex, you may optionally provide an easily accessible link to a hosted version.
+A technical report: A single PDF (max. 800 words) with the following structure
+Abstract: Briefly describe what problem you aimed to solve for whom, how or what technical challenge you examined.
+Description:
+Describe the ideal, direct user journey. (We will use this description to evaluate your work)
+Describe your technical approach and reasoning behind your choices
+Describe the challenges / technical obstacles you have faced (what didn't just magically work on the first try)
+Evaluation: Describe how you evaluated your system and show the actual results. Provide a final discussion on whether it worked or not. If not why not.
+Reflection: Reflect upon these two questions:
+Does your system increase or decrease human agency? Explain briefly.
+Would you develop this further? (yes / no / maybe) – and why?
+You may optionally provide a screencast explaining your application in case your technical report is not sufficient to understand your application.
+6. Resources
+We cannot provide computational resources, but many cloud platforms and API providers offer free tiers with usage that may be sufficient for your project. In case you believe they are not sufficient, we can try to organise something after the mid term interviews.
+
+7. FAQ
+What programming language are we allowed to use?
+You are allowed to use any programming language
+Do we (students) need to provide you (the lecture team) our own LLM-keys?
+No, if you use proprietary systems like OpenAI, Anthropic, etc. we will use our own keys for the evaluation. Please just make sure to properly document the steps to configure your application (e.g. adding a key to a .env file)
