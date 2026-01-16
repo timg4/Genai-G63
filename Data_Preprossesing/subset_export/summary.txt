@@ -1,0 +1,16 @@
+Subset collection summary
+- Requested files: 31
+- Images copied: 31
+- Images with annotations: 31
+- Annotations kept: 106
+- Annotation sources: annotations_test_HR.json, annotations_train_1024.json
+- Missing image files: 0
+- Missing annotations: 0
+- Duplicate image candidates: 0
+
+Category distribution:
+- 0:VG;MT -> 32
+- 1:LE;ER -> 41
+- 2:LR;DA -> 5
+- 3:LE;CR -> 19
+- 4:SF;PO -> 9
