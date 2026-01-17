@@ -13,7 +13,7 @@ pip install -r requirements.txt
 ## Build an index
 
 ```bash
-python rag_cli.py build --manuals "manuals_files/manual-01.pdf" "manuals_files/manual-02.pdf" "manuals_files/manual-03.pdf" "manuals_files/manual-04.pdf" "manuals_files/manual-05.pdf" --index-dir "./manuals_index"
+python rag_cli.py build --manuals "manuals_files/manual-01.pdf" "manuals_files/manual-02.pdf" "manuals_files/manual-03.pdf" "manuals_files/manual-04.pdf" "manuals_files/manual-05.pdf" --index-dir "./manuals/manuals_index"
 ```
 
 Optional knobs:
@@ -30,13 +30,13 @@ Artifacts written to `./index`:
 ## Query the index
 
 ```bash
-python rag_cli.py query --index-dir "./manuals_index" --query "Gearbox vibration spike after shutdown" --top-k 5
+python rag_cli.py query --index-dir "./manuals/manuals_index" --query "Gearbox vibration spike after shutdown" --top-k 5
 ```
 
 With grounded JSON report (requires `OPENAI_API_KEY`):
 
 ```bash
-python rag_cli.py query --index-dir "./manuals_index" --query "Gearbox vibration spike after shutdown" --top-k 5 --generate
+python rag_cli.py query --index-dir "./manuals/manuals_index" --query "Gearbox vibration spike after shutdown" --top-k 5 --generate
 ```
 
 Hybrid retrieval blends embeddings and BM25 by default:
@@ -52,7 +52,7 @@ Set `--alpha` (0-1) to tune the mix.
 `gold_example.jsonl` is a dummy template. Replace `relevant_chunk_ids` with actual chunk ids from `metadata.json`.
 
 ```bash
-python rag_cli.py eval --index-dir "./manuals_index" --gold "gold_example.jsonl" --top-k 5
+python rag_cli.py eval --index-dir "./manuals/manuals_index" --gold "gold_example.jsonl" --top-k 5
 ```
 
 ## Notes
