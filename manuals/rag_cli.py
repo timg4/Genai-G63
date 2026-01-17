@@ -81,6 +81,18 @@ def parse_args():
         help="Manual base filenames to skip leading pages for.",
     )
     build_parser.add_argument(
+        "--min-page-tokens",
+        type=int,
+        default=20,
+        help="Minimum tokens per page to keep (filters image/table pages).",
+    )
+    build_parser.add_argument(
+        "--min-alpha-ratio",
+        type=float,
+        default=0.6,
+        help="Minimum letter/alpha ratio for section content.",
+    )
+    build_parser.add_argument(
         "--batch-size",
         type=int,
         default=32,
@@ -186,6 +198,8 @@ def main():
             section_manuals=args.section_manuals,
             skip_first_pages=args.skip_first_pages,
             skip_page_manuals=args.skip_page_manuals,
+            min_page_tokens=args.min_page_tokens,
+            min_alpha_ratio=args.min_alpha_ratio,
         )
         return
 

@@ -137,6 +137,12 @@ def is_heading_line(line):
     if not stripped:
         return False
     lower = stripped.lower()
+    if re.match(r"^\d{4}[-/]\d{2}[-/]\d{2}\b", stripped):
+        return False
+    if re.match(r"^\d{1,2}[./]\d{1,2}[./]\d{2,4}\b", stripped):
+        return False
+    if re.match(r"^(figure|fig\.|table|tab\.)\b", lower):
+        return False
     if re.match(r"^\d+(\.\d+)*\s+\S+", stripped):
         return True
     if re.match(r"^(element|lesson|tab\.?|table|figure|fig\.?)\b", lower):
@@ -144,6 +150,23 @@ def is_heading_line(line):
     if re.match(r"^[A-Z0-9][A-Z0-9 \-:/]{5,}$", stripped):
         return True
     return False
+
+
+def alpha_ratio(text):
+    letters = len(re.findall(r"[A-Za-z]", text))
+    alnum = len(re.findall(r"[A-Za-z0-9]", text))
+    return letters / float(alnum) if alnum else 0.0
+
+
+def filter_pages(pages, min_page_tokens):
+    if min_page_tokens <= 0:
+        return pages
+    filtered = []
+    for page in pages:
+        token_count = len(tokenize(page.get("text", "")))
+        if token_count >= min_page_tokens:
+            filtered.append(page)
+    return filtered
 
 
 def extract_outline_entries(reader):
@@ -244,7 +267,7 @@ def split_into_blocks(pages):
     return blocks
 
 
-def merge_small_blocks(blocks, min_tokens):
+def merge_small_blocks(blocks, min_tokens, min_alpha_ratio):
     if not blocks:
         return blocks
     merged = []
@@ -252,6 +275,7 @@ def merge_small_blocks(blocks, min_tokens):
     for block in blocks:
         text = block.get("text", "")
         tokens = tokenize(text)
+        content_ok = len(tokens) >= min_tokens and alpha_ratio(text) >= min_alpha_ratio
         if carry is None:
             carry = {
                 "page_index": block.get("page_index"),
@@ -265,7 +289,9 @@ def merge_small_blocks(blocks, min_tokens):
                 carry["heading"] = block.get("heading")
             if block.get("page_end"):
                 carry["page_end"] = block.get("page_end")
-        if len(tokenize(carry["text"])) >= min_tokens:
+        carry_tokens = tokenize(carry["text"])
+        carry_ok = len(carry_tokens) >= min_tokens and alpha_ratio(carry["text"]) >= min_alpha_ratio
+        if content_ok and carry_ok:
             merged.append(carry)
             carry = None
     if carry:
@@ -444,6 +470,8 @@ def build_index(
     section_manuals,
     skip_first_pages,
     skip_page_manuals,
+    min_page_tokens,
+    min_alpha_ratio,
 ):
     setup_logging()
     set_deterministic(seed)
@@ -475,13 +503,17 @@ def build_index(
             if not pages:
                 LOGGER.warning("All pages skipped for %s", path)
                 continue
+        pages = filter_pages(pages, min_page_tokens=min_page_tokens)
+        if not pages:
+            LOGGER.warning("All pages filtered due to low text for %s", path)
+            continue
         if outline_entries:
             blocks = build_outline_blocks(pages, outline_entries)
             if not blocks:
                 blocks = split_into_blocks(pages)
         else:
             blocks = split_into_blocks(pages)
-        blocks = merge_small_blocks(blocks, min_tokens=120)
+        blocks = merge_small_blocks(blocks, min_tokens=120, min_alpha_ratio=min_alpha_ratio)
         if not blocks:
             LOGGER.warning("No text blocks produced for %s", path)
             continue
@@ -523,6 +555,8 @@ def build_index(
         "section_manuals": section_manuals,
         "skip_first_pages": skip_first_pages,
         "skip_page_manuals": skip_page_manuals,
+        "min_page_tokens": min_page_tokens,
+        "min_alpha_ratio": min_alpha_ratio,
         "manual_paths": manual_paths,
         "num_chunks": len(all_chunks),
     }

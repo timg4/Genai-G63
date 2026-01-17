@@ -12,6 +12,8 @@
   "skip_page_manuals": [
     "manual-02.pdf"
   ],
+  "min_page_tokens": 20,
+  "min_alpha_ratio": 0.6,
   "manual_paths": [
     "manuals/manuals_files\\manual-01.pdf",
     "manuals/manuals_files\\manual-02.pdf",
@@ -22,5 +24,5 @@
     "manuals/manuals_files\\manual-07-synthetic.pdf",
     "manuals/manuals_files\\manual-08-synthetic.pdf"
   ],
-  "num_chunks": 249
+  "num_chunks": 242
 }

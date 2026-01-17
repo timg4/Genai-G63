@@ -26,6 +26,8 @@ Optional knobs:
 - `--section-manuals` base filenames that use outline/heading sectioning; use `"*"` for all (default: `"*"`)
 - `--skip-first-pages` leading pages to skip for manuals in `--skip-page-manuals` (default: 2)
 - `--skip-page-manuals` base filenames that skip leading pages (default: `manual-02.pdf`)
+- `--min-page-tokens` drop pages with too little text (default: 20)
+- `--min-alpha-ratio` drop low-text/number-heavy sections (default: 0.6)
 
 Artifacts written to `./manuals_index`:
 - `index.faiss`
@@ -67,3 +69,4 @@ python rag_cli.py eval --index-dir "./manuals_index" --gold "gold_example.jsonl"
 - Chunk ids are deterministic per manual path and chunk index.
 - Chunking hard-splits at headings like "ELEMENT", "Lesson", "Tab.", "Figure", or numbered section lines.
 - Retrieved results include `page`, `page_end`, and `section` when available to help locate content in the manuals.
+- Date-only headings and Figure/Table captions are ignored as section splits.
