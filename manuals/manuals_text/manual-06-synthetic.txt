@@ -1,0 +1,242 @@
+SOURCE_PDF: manual-06-synthetic.pdf
+
+=== PAGE 1 ===
+WTB-WI-LE-202
+Version 2.1 | 2026-01-17
+Leading Edge and Surface Laminate Cracks - Assessment and Field Response
+Page 1
+ Leading Edge and Surface Laminate Cracks -
+ Assessment and Field Response
+Document ID: WTB-WI-LE-202
+Version: 2.1
+Date: 2026-01-17
+Intended audience: Blade inspection technicians, composite repair technicians, O&M; engineers
+Scope: Identification, sizing, and response selection for cracks near the leading edge and superficial
+laminate cracks on blade surfaces. Includes containment actions and escalation criteria. Excludes major
+structural spar repairs.
+Revision table
+Version (date)
+Change
+1.0 (2025-09-18)
+Initial issue
+2.0 (2026-01-03)
+Added crack class thresholds and stop criteria
+2.1 (2026-01-17)
+Updated verification steps and troubleshooting
+
+=== PAGE 2 ===
+WTB-WI-LE-202
+Version 2.1 | 2026-01-17
+Leading Edge and Surface Laminate Cracks - Assessment and Field Response
+Page 2
+1.0 TERMS AND DEFINITIONS
+1.1 Crack: A visible separation in coating or laminate, may be linear or branched.
+1.2 Through-coat crack: Crack confined to paint/gelcoat layer.
+1.3 Laminate crack: Crack extends into composite laminate.
+1.4 Delamination: Separation between laminate layers, often detected by tap testing.
+1.5 Bond line: Adhesive joint region (often near trailing edge; cracks can migrate from stress
+concentration areas).
+1.6 Crack length: Measured along the crack path (not straight line distance).
+2.0 SAFETY
+2.1 General
+Apply LOTO before close inspection and any repair work.
+Use cut-resistant gloves when probing crack edges.
+Do not grind into suspected structural areas without authorization.
+2.2 Stop Criteria (Do not operate if...)
+Any crack at or crossing the leading edge with length >100 mm and confirmed laminate involvement.
+Any crack accompanied by soft/void sound on tap test over area >100 cm2.
+Any crack showing moisture seepage, dark staining, or active propagation (new branching since last
+inspection).
+Any crack within 0-10% span that is longer than 50 mm (root zone concerns).
+3.0 INSPECTION
+3.1 Inspection Objective
+Distinguish coating cracks from laminate cracks, assess extent, and select appropriate response: monitor,
+seal, minor repair, or escalate.
+3.2 Crack Classification Table
+TABLE 3.2 (ASCII)
+Class
+Description
+Typical Action
+C1
+Hairline in coating only, <50 mm
+Clean, seal, monitor
+C2
+Coating crack 50-200 mm, no laminate signs
+Seal + follow-up inspection
+C3
+Suspected laminate crack <=100 mm
+Local repair + verify
+C4
+Laminate crack >100 mm or delamination signs
+Stop and escalate
+3.3 Inspection Methods
+Visual under angled light and magnification (if available)
+Crack edge probe with plastic pick (no metal scraping)
+Tap test: coin or small hammer; compare with adjacent area
+Moisture indicator check if staining is present
+
+=== PAGE 3 ===
+WTB-WI-LE-202
+Version 2.1 | 2026-01-17
+Leading Edge and Surface Laminate Cracks - Assessment and Field Response
+Page 3
+Record span position: 0-20%, 20-60%, 60-100%
+3.4 Reporting Fields
+Turbine ID, blade ID, date/time
+Span position (start/end in %), side (pressure/suction), region (leading edge zone or surface)
+Crack length (mm), max opening (mm), any branching
+Tap test boundary (drawn outline), moisture/staining notes
+Photo set: overview, close-up with scale, close-up at 45 degrees, tap test boundary photo
+4.0 PROCEDURE
+4.1 Procedure Overview
+This procedure provides steps for crack assessment and two field responses: sealing/coating crack
+containment and minor laminate repair for small cracks. For C4, escalate.
+4.2 Tools and Materials
+Cleaner, lint-free wipes
+Abrasives: 180, 240, 320 grit
+Plastic pick, flexible ruler, marker
+Sealant compatible with coating system (for C1-C2)
+Patch resin system (for limited laminate repair), mixing supplies
+Peel ply (optional), small vacuum bag kit if approved
+Paint/finish materials for top coat restoration
+4.3 Step-by-Step Procedure: Assessment (All crack classes)
+Confirm turbine is safe and locked out. Record turbine state.
+Locate the crack and mark its ends with a fine marker.
+Clean the area gently. Remove dirt that can hide crack branching.
+Photograph overview and close-up with scale before any sanding.
+Measure crack length along path. Record max opening if visible.
+Probe crack edge with plastic pick. Note if edges are raised or if material flakes.
+Perform tap test in a grid around the crack (approx 50 mm spacing). Mark any dull-sounding boundary.
+If staining/moisture suspected, wipe and observe if fluid reappears. Note odor and color (do not taste).
+Classify crack per Table 3.2 and decide response path:
+IF C1 or C2 THEN proceed to Section 4.4.
+IF C3 THEN proceed to Section 4.5.
+IF C4 THEN proceed to Section 4.6.
+4.4 Step-by-Step Procedure: Seal and Contain (C1-C2)
+
+10) Sand lightly along the crack line (320 grit) to open the surface for sealant adhesion (do not widen crack
+aggressively).
+
+11) Clean sanding dust and allow surface to dry fully.
+
+12) Apply sealant along crack using controlled bead. Work it into the crack with a plastic spreader.
+
+13) Remove excess sealant and feather edges for smooth runoff.
+
+14) Allow cure per product spec. Protect from rain during cure.
+
+=== PAGE 4 ===
+WTB-WI-LE-202
+Version 2.1 | 2026-01-17
+Leading Edge and Surface Laminate Cracks - Assessment and Field Response
+Page 4
+
+15) Apply touch-up coating if required. Confirm the surface is smooth to the hand.
+
+16) Document final photos and schedule follow-up inspection within 30-90 days (depending on span
+location and crack length).
+4.5 Step-by-Step Procedure: Minor Laminate Repair (C3)
+
+17) Define repair boundary: at least 30 mm beyond crack ends and 20 mm to each side.
+
+18) Sand the boundary to remove coating down to laminate where required. Create a smooth taper (no
+sharp steps).
+
+19) Clean thoroughly. Ensure no moisture is trapped; if moisture suspected, stop and escalate.
+
+20) Prepare resin system and reinforcement per approved kit. Do not substitute materials without
+approval.
+
+21) Apply resin and reinforcement to bridge crack zone. Maintain leading edge contour; avoid creating a
+ridge.
+
+22) If peel ply is used, apply and compress to remove excess resin and improve surface finish.
+
+23) Allow cure. Verify cure by hardness check (no tack, stable under light pressure).
+
+24) Sand cured patch flush (240-320 grit) and restore protective coating.
+
+25) Perform tap test on repaired zone and adjacent area. Confirm no new dull areas formed.
+
+26) Complete documentation: measurements, photos, batch numbers, ambient conditions.
+4.6 Escalation and Temporary Measures (C4)
+
+27) Stop work. Do not grind or drill.
+
+28) Mark boundaries of suspected delamination and crack ends clearly.
+
+29) Capture detailed photos including tap test boundary.
+
+30) Notify supervisor and request engineering review and OEM work instruction.
+
+31) If approved, apply temporary environmental seal only (thin sealant coat) to prevent moisture ingress;
+do not claim structural restoration.
+5.0 CHECKLIST
+5.1 Assessment Checklist
+
+LOTO verified
+
+Photos taken before sanding
+
+Crack length and opening measured
+
+Tap test performed and boundary recorded
+
+Span position recorded (0-20 / 20-60 / 60-100)
+
+Crack class assigned per Table 3.2
+5.2 Repair Checklist (Seal path)
+
+Surface cleaned and dry
+
+Light sanding performed for adhesion
+
+Sealant applied and smoothed
+
+Cure protected from weather
+
+Follow-up inspection scheduled
+5.3 Repair Checklist (Laminate repair path)
+
+=== PAGE 5 ===
+WTB-WI-LE-202
+Version 2.1 | 2026-01-17
+Leading Edge and Surface Laminate Cracks - Assessment and Field Response
+Page 5
+
+Boundary includes margins beyond crack ends
+
+Taper smooth, no sharp edges
+
+Materials mixed correctly; batch recorded
+
+Patch flush with contour
+
+Tap test passed after cure
+
+Coating restored
+6.0 TROUBLESHOOTING
+6.1 Symptom: Crack reappears through sealant after cure
+Likely causes:
+Crack is moving (laminate involvement)
+Sealant not compatible or poor surface prep Checks:
+Inspect for branching; repeat tap test Actions:
+Reclassify. IF signs of laminate or delamination THEN escalate (Section 4.6).
+If coating-only, remove sealant, re-prep, re-apply with proper primer if specified.
+6.2 Symptom: Repair patch forms a ridge that catches water
+Likely causes:
+Excess resin or insufficient sanding Checks:
+Visual and hand check along airflow direction Actions:
+Sand and feather edges, restore coating, re-check contour.
+6.3 Symptom: Dull tap sound appears after sanding
+Likely causes:
+Delamination exposed or extended by aggressive grinding Checks:
+Map dull area boundary Actions:
+Stop and escalate. Document boundary and avoid further material removal.
+7.0 CHANGE LOG
+7.1 Summary of Changes
+Added root-zone stop criteria and moisture warnings
+Clarified seal vs laminate repair decision logic
+Added troubleshooting for ridge formation and recurring cracks
+END OF DOCUMENT
+

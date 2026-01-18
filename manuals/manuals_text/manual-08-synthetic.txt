@@ -1,0 +1,203 @@
+SOURCE_PDF: manual-08-synthetic.pdf
+
+=== PAGE 1 ===
+WTB-WI-SURF-404
+Version 1.4 | 2026-01-17
+Surface Coating and Paint Loss - Preparation, Restoration, and Acceptance Checks
+Page 1
+ Surface Coating and Paint Loss - Preparation,
+ Restoration, and Acceptance Checks
+Document ID: WTB-WI-SURF-404
+Version: 1.4
+Date: 2026-01-17
+Intended audience: Blade service technicians, coating technicians, O&M; supervisors
+Scope: Field identification and repair of surface coating loss and paint damage on wind turbine blades.
+Includes surface preparation, coating restoration, curing, and acceptance checks. Excludes major laminate
+reconstruction; if fibers are exposed or laminate is damaged, escalate per Section 3.4.
+Revision table
+Version (date)
+Change
+1.0 (2025-10-12)
+Initial issue
+1.3 (2026-01-08)
+Added humidity limits and cure verification
+1.4 (2026-01-17)
+Clarified prep grit sequence and QA checks
+
+=== PAGE 2 ===
+WTB-WI-SURF-404
+Version 1.4 | 2026-01-17
+Surface Coating and Paint Loss - Preparation, Restoration, and Acceptance Checks
+Page 2
+1.0 TERMS AND DEFINITIONS
+1.1 Coating: Paint, gelcoat, or protective top layer on blade surface.
+1.2 Paint loss: Missing or flaking paint exposing primer or substrate.
+1.3 Feather edge: Smooth transition from intact coating to bare area without a sharp step.
+1.4 Cure: Time and conditions required for coating to reach handling and service hardness.
+1.5 Overspray: Unwanted coating deposition beyond repair zone.
+2.0 SAFETY
+2.1 General
+Apply LOTO and confirm turbine is safe to access.
+Use respiratory protection when sanding or spraying coatings.
+Control overspray and protect surrounding surfaces and environment.
+2.2 Stop Criteria (Do not operate if...)
+Fibers are exposed over area >25 cm2 or any laminate is visibly damaged.
+Coating loss is associated with blistering that indicates underlying delamination (soft tap sound).
+Repair cannot be completed to minimum acceptance due to weather conditions (Section 4.3).
+2.3 Environmental Limits
+Do not apply coatings if surface is wet or if condensation is likely.
+Avoid coating when relative humidity is high enough to cause blush or poor adhesion.
+If using fast-cure systems, ensure wind does not carry overspray into sensitive areas.
+3.0 INSPECTION
+3.1 Inspection Objective
+Identify coating loss extent, determine whether damage is cosmetic only, and select restoration method.
+3.2 Coating Damage Severity Table
+TABLE 3.2 (ASCII)
+Class
+Visual Signs
+Typical Area
+Action
+P1
+Light scuffs, minor discoloration
+<25 cm2
+Clean and monitor
+P2
+Local paint loss, edges stable
+25-200 cm2
+Spot repair and top coat
+P3
+Flaking edges, multiple patches, rough surface
+200-1000 cm2
+Prep + primer + top coat
+P4
+Exposed fibers, blisters, or laminate damage
+any
+Stop and escalate
+3.3 Required Measurements and Reporting Fields
+Turbine ID, blade ID, date/time, ambient temperature (if available)
+Span position range and side (pressure/suction)
+Area estimate (cm2), max length/width
+Photos: overview, close-up with scale, boundary shot, post-work finish
+Notes: contamination, salt, insect buildup, prior repairs
+
+=== PAGE 3 ===
+WTB-WI-SURF-404
+Version 1.4 | 2026-01-17
+Surface Coating and Paint Loss - Preparation, Restoration, and Acceptance Checks
+Page 3
+3.4 Escalation Indicators
+Any evidence of laminate involvement: fiber exposure, cracks, soft tap sound.
+Blisters around paint loss that expand when pressed gently.
+Repeated paint loss in same location within 6 months.
+4.0 PROCEDURE
+4.1 Tools and Materials
+Cleaner, lint-free wipes, masking film
+Abrasives: 120, 180, 240, 320 grit
+Vacuum or dust removal method
+Primer system compatible with blade coating
+Top coat system (spray or brush/roller) as approved
+Mixing supplies, wet film gauge (if available)
+Edge blending pads, polishing compound (if specified)
+4.2 Preparation Notes
+For P2-P3, the goal is adhesion and smooth runoff. Do not leave sharp coating steps.
+Mask a perimeter beyond repair zone to control overspray and create a clean edge.
+4.3 Step-by-Step Procedure: Surface Coating Restoration (P2-P3)
+Confirm LOTO and safe access. Record turbine state.
+Mark repair boundary including at least 30 mm margin beyond visible paint loss.
+Clean boundary and surrounding area. Remove insects and residue thoroughly.
+Take pre-work photos including scale and span position reference.
+Evaluate damage class using Table 3.2. If P4, stop and escalate (Section 3.4).
+Remove loose paint at the edges by hand scraping with plastic tool (no metal gouging).
+Sand the damaged area with 120-180 grit to remove unstable coating and rough substrate lightly.
+Feather the boundary using 240 grit until transition is smooth (no hard edge).
+Vacuum and wipe down. Ensure the surface is dry and free of dust.
+If bare substrate is present, apply primer as specified. Keep primer within the prepared zone.
+Verify primer flash time and dryness before top coat. Do not trap solvent under top coat.
+Apply first top coat layer evenly. Use wet film gauge if available to confirm thickness.
+Allow tack time then apply second layer if required to achieve coverage and durability.
+Remove masking at the correct time to avoid tearing cured edges (follow product guidance).
+Allow cure per product specification. Protect from rain and contamination during cure.
+Perform finish sanding/blending if needed (320 grit) to match surrounding surface.
+Conduct acceptance checks (Section 5.3) and take final photos.
+Record materials, batch numbers, ambient conditions, and any deviations.
+4.4 Step-by-Step Procedure: Small Spot Repair (P2 quick method)
+
+19) Clean and lightly abrade (240-320 grit) the spot and 20 mm beyond.
+
+20) Apply primer if substrate is exposed.
+
+21) Apply top coat by brush/roller in thin layers; avoid runs.
+
+=== PAGE 4 ===
+WTB-WI-SURF-404
+Version 1.4 | 2026-01-17
+Surface Coating and Paint Loss - Preparation, Restoration, and Acceptance Checks
+Page 4
+
+22) Blend edges with a pad after cure if needed. Document and schedule follow-up check.
+5.0 CHECKLIST
+5.1 Pre-Work Checklist
+
+Permit-to-work approved and LOTO verified
+
+Weather suitable (dry surface, manageable wind)
+
+PPE for dust and coating application
+
+Correct primer/top coat system available
+
+Masking and overspray control prepared
+5.2 In-Process Checklist
+
+Loose paint removed; edges stable
+
+Boundary feathered smooth
+
+Surface dust-free and dry
+
+Primer applied only where required
+
+Top coat applied evenly (no runs)
+5.3 Post-Work Acceptance Checks
+
+No exposed substrate within repair zone
+
+No sharp edges; transition smooth to hand and visual check
+
+No pinholes, fisheyes, or uncured tackiness
+
+Adhesion quick check: light tape pull on fully cured area (if permitted), no flaking
+
+Repair finish does not create ridge that traps water
+
+Photos and report fields complete
+6.0 TROUBLESHOOTING
+6.1 Symptom: Coating craters or fisheyes during application
+Likely causes:
+Surface contamination (oil/silicone)
+Cleaner residue not fully flashed Checks:
+Wipe test on adjacent area, inspect for oily sheen Actions:
+Stop application, allow flash-off, re-clean, and re-apply with proper prep
+6.2 Symptom: Coating remains soft after expected cure time
+Likely causes:
+Low temperature, high humidity, incorrect mix ratio Checks:
+Confirm ambient conditions and mixing records Actions:
+Extend cure time if within allowable conditions; if still soft, remove and rework
+6.3 Symptom: Repaired patch peels at feather edge after return to service
+Likely causes:
+Feather edge too abrupt or coating applied over unstable paint Checks:
+Inspect peeling boundary and underlying layer integrity Actions:
+Re-prep with wider taper, remove unstable layers, re-prime and re-coat
+
+=== PAGE 5 ===
+WTB-WI-SURF-404
+Version 1.4 | 2026-01-17
+Surface Coating and Paint Loss - Preparation, Restoration, and Acceptance Checks
+Page 5
+7.0 CHANGE LOG
+7.1 Summary of Changes
+Added environmental and cure verification guidance
+Clarified grit sequence and acceptance checks
+Expanded troubleshooting for adhesion failures
+END OF DOCUMENT
+

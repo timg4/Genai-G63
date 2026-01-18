@@ -1,0 +1,1492 @@
+SOURCE_PDF: manual-03.pdf
+
+=== PAGE 1 ===
+Maintenance Manual
+for “Piggott“ 
+Small Wind Turbines
+ Version 3.2
+WindEmpowerment
+2018 
+Gaël Cesa , Marie-Laure Brunel , Jérôme Strasilla
+
+=== PAGE 2 ===
+Content & Layout: Maintenance Working Group:
+ Marie-Laure Brunel, Gaël Cesa, Jérôme Strasilla
+ 
+ Publishing date: March 2018
+ Acknowledgement: Hugh Piggott, Jon Summanik-Leary, Jay Hudnall, Valéry Benton, 
+ Christophe Glaziou
+ 
+ In collaboration with:
+ Funded by: 
+Maintenance Manual
+for “Piggott“ Small Wind Turbines
+ Version 3.2.1
+
+=== PAGE 3 ===
+Grundlagenrecherche
+Content.........................................................................................................
+Preface & introduction................................................................................
+Safety & precautions..................................................................................
+Environmental factors..................................................................................
+Tool list.........................................................................................................
+Lowering and raising the turbine...............................................................
+ Securing the area and the WT system......................................... 
+ Lowering the WT.......................................................................
+ Disassembling the WT................................................................. 
+ Reassembling the WT.............................................................................
+ Raising the tower.....................................................................................
+Maintaining your wind turbine system........................................................
+ Blades............................................................................................
+ Alternator & frame.....................................................................................
+ Tower & foundation.....................................................................................
+ Electrical system.....................................................................................
+Service frequency.........................................................................................
+Check list........................................................................................................
+Troubleshooting.............................................................................................
+Logbook........................................................................................................
+Appendix.......................................................................................................
+ page 3
+ page 4
+ page 5
+ page 6
+ page 9
+ page 12
+ page 12
+ page 15
+ page 17
+ page 18
+ page 19
+ page 21
+ page 21
+ page 23
+ page 29
+ page 31
+ page 36
+ page 37
+ page 40
+ page 43
+ page 45
+ 
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 
+ 7
+ 8
+ 9
+10
+5.1
+5.2
+5.3
+5.4
+5.5
+6.1
+6.2
+6.3
+6.4
+Content
+Content
+Maintenance Manual 3
+
+=== PAGE 4 ===
+Grundlagenrecherche1 Preface & Introdcution
+1 Preface & introduction
+Preface
+The present document is a maintenance manual for “Piggott“ based designed small wind turbines (SWT), developed 
+by WindEmpowerment (WE) association (http://www.windempowerment.org). Founded in Senegal in 2011, WindEmpo-
+werment is involved in the development of locally manufactured small wind turbines for sustainable rural electrification 
+around the world.
+Wind Empowerment’s Maintenance Working Group (WG) was formed in Athens during the 2
+nd
+ global conference, with 
+the following group vision: 
+“To mutually empower people to keep their turbines running.”
+Tripalium (French network for Piggott wind turbines: http://www.tripalium.org) produced the first two versions of a main-
+tenance manual that has been translated into an english version for WindEmpowerment. The 3rd version is the result 
+of 6 months of teamwork. The objective is to increase users autonomy for producing their own electricity by being able 
+to operate and maintain their wind turbines. This manual is available as a free download at the WE and WE members 
+website. However donations are suitable to support a future edition of this maintenance manual. All SWT operators are 
+invited to download and print the manual and keep it close to their turbine.
+Introduction
+Wind turbines are a fascinating way to produce electricity and increase energy autonomy. On a good site you can pro -
+duce most of your needs with the fruit of your endeavours. 
+Many wind turbines inspired and based on a concept deceloped by Hugh Piggott have been manufactured all around 
+the world. Whilst most of the turbines built according to these specifications performed well initially, many broke down 
+after some time due to a lack of appropriate maintenance. This is a particular problem for WE-members who implement 
+electrification projects in remote areas of developing countries, where local technical capacity to perform repairs is low 
+and travel time to reach installation sites are particularly long.
+This 3
+rd
+ maintenance manual edition includes preventative and corrective maintenance according to common issues 
+based on our experience and the WE-members feedback from around the world. 
+It takes into account environmental factors influencing maintenance needs, a list of the tools that you need to perform 
+the maintenance steps, more detailed maintenance procedures, troubleshooting, a check list and finally a crash page 
+with stories of what went wrong at different SWT installation sites.
+Nevertheless, other events not listed can occur. For this reason this document is meant to to be updated in the future. 
+A database will be available online to monitor SWT maintenance actions but also failures or breakdowns that occured, 
+so we encourage you to give us your feedback at windempowerment.group@gmail.com to help us to improve future 
+editions.This manual is mainly focused on Piggott SWT design concept with guy wired tower, for off-grid and grid-tied 
+systems. However, it can also be useful for commercially manufactured turbines. 
+We hope this work will help you to operate and maintain your turbine so it can reach it‘s full potential.
+Maintenance Manual 4
+
+=== PAGE 5 ===
+Grundlagenrecherche
+2 Safety & precautions
+Unlike most of maintenance manuals for manufactured goods, 
+we strongly encourage you to take apart your turbine.
+Check the weather forecast before planning a maintenance service.
+Before any maintenance action it is absolutely essential to:
+Stop the wind turbine switchin ON the short-circuit brake (figure 1).
+Mechanical hazards
+ Disassembling the permanent magnet generator: 
+ The rotors have very powerful magnets, therefore it is dangerous to have metal 
+ objects or tools close to the rotors. When the two rotors are removed, they must 
+ be stored at the appropriate distance from each other, at least 1.5 m.
+Be careful when you dismount the blades to store them in a safe place to avoid any damage.
+2 Safety & precautions
+Maintenance Manual 5
+Fig. 1: Brake switch
+Electrical hazards
+Power cables
+ Risk of electroshock from touching the live wires for 48V and grid-tied systems (400V), especially if you
+ disconnect a cable and as a consequence your turbine is spinning freely. 
+ 
+Batteries 
+ • A short circuit in the wires connected to the batteries can cause a burning or an explosion. 
+ • Charging a lead-acid battery emits hydrogen, which is highly explosive. 
+ • Make sure that the area where the battery is located is well ventilated.
+ • Watch out for sparks, flames and other sources of ignition! 
+Magnets
+ If you have a pacemaker or other medical devices, stay away! 
+ The permanent magnet generators have a particularly powerful magnetic field .
+Safety gear
+We recommend you to wear safety equipment like gloves, safety shoes and a safety helmet. 
+But remember that the best safety is to work intelligently and making sure the people around you are equally behaving 
+in a responsible manner.
+Safety should be your primary concern during all maintenance actions performed on your small wind installation
+ and particularly when raising and lowering the tower. Be attentive for risks that may arise from both electrical and 
+mechanical components.
+
+=== PAGE 6 ===
+Grundlagenrecherche
+3 Environmental factors
+The following table provides an overview about factors that can significantly influence the life span of a SWT. 
+The worst enemies of SWT are: • Strong winds & turbulent wind conditions
+ • W a t e r
+ • Salt
+ • Sand/erosion
+ • Lack of maintenance
+3 Environmental factors
+Maintenance Manual 6
+Tab. 1: Environmental factors influencing the life span of a SWT
+Factors Risks Countermeasures Main sensitive parts
+Lightning Destruction of the system 
+(turbine and electronics)
+In grid-tied system: Risk to 
+burn the inverter and elec -
+tronics from a strike on the 
+grid
+All the guy wires should be connected 
+together with the tower to a ground rod 
+(figure 2) or at least connected to the 
+ground next to each anchor.
+The electrical system should also be 
+connected to the same ground rod via 
+a ground cable to the tower.
+Be sure there is a lightning arrester 
+between the tower and the electronics.
+On a grid-tied connection, be sure 
+there is a lightning arrestor between 
+the grid and the inverter.
+• electronics
+• anchors
+Saline air Corrosion of magnets (co -
+mes from the rust inside 
+the resin), guy wires and all 
+metallic parts (tower, frame, 
+etc.) 
+Wear of components made 
+of plywood (especially if 
+poor quality plywood)
+Protect exposed metal materials and 
+rotors of the WT with a painting against 
+corrosion.
+Change rusted fastenings and guy 
+wires by stainless ones. If you have 
+galvanized ones, protect them with old 
+car oil or other kind of grease.
+If the magnets are corroded, build new 
+rotors and paint or galvanise the disks, 
+and use expoy resin. Use also epoxy 
+coating magnets
+Use high quality plywood or change 
+by metal parts.
+• neodynium magnets
+• guy wires
+• other metalic part (frame, 
+ tail, tower)
+• plywood parts
+Hail Blades affected by erosion 
+Tail damaged
+The paint on metal parts 
+can be removed
+Fix holes and eroded parts with epoxy 
+resin and protect the blades with paint 
+or polyurethane varnish.
+Protect the plywood tail with resin or 
+polyurethane varnish.
+• blades
+• tail
+If a wind turbine is running below one or more of these factors, 
+it will require more frequent preventative maintenance.
+
+=== PAGE 7 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen
+Bearbeiter_in 7 von 46
+Grundlagenrecherche3 Environmental factors
+Maintenance Manual 7
+Tab. 1: Environmental factors influencing the life span of a SWT
+Factors Risks Countermeasures Main sensitive parts
+Sandy environment Abrasive effect, strong wear 
+on the leading edge of the 
+blades, and on the whole 
+system
+Paint your blades with layers of 
+different colours. If a layer of colour 
+gets exposed by erosion, refurbish 
+the blade surface with a new layer.
+Put some tape on the leading edge 
+to protect the blades, or protect 
+them with epoxy resin.
+Remove the sand at the tower base 
+regularly (figure 3).
+Protect chains by pouring them into 
+concrete (figure 4).
+Protect guy wires and fittings with oil 
+or grease (can also be old car oil)
+• blades
+• base of tower
+• anchors 
+• metal parts
+Hot-dry climates Overheating of electrical 
+components (High tempera-
+tures can reduce the battery 
+life by more than 75%)
+Don‘t paint the stator, it will help the 
+cooling of the coils by ambient air.
+Make sure all electrical components 
+are ventilated and not enclosed.
+Make sure batteries are air-cooled: 
+surelevate them on a wooden palet-
+te, try air-conditionning, and make a 
+good insulation of the battery room.
+• electric and electro- 
+ nic components
+Cold climates Icing leads to cracks and 
+imbalanced blades
+Infiltration of snow and ice 
+into the junction boxes and 
+resin leads to cracks
+Check the waterproofness of the junc-
+tion boxes and the wire connections 
+inside, change them if necessary.
+Check and repair holes and cracks 
+in the blades and resin components.
+• blades
+• electrical connections
+Fig. 2: Ground connection of the tower and electronics Fig 3: Sand at the tower base
+
+=== PAGE 8 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen
+Bearbeiter_in 8 von 46
+Grundlagenrecherche3 Environmental factors
+Maintenance Manual 8
+Tab. 1: Environmental factors influencing the life span of a SWT
+Factors Risks Countermeasures Main sensitive parts
+Storms Strong vibrations on the 
+whole system might break 
+the blades and/or tail
+Lower the turbine if a storm is predicted 
+or inspect your turbine after the storm. 
+We recommend to let the turbine run -
+ning because when it is stopped, a high 
+wind speed can be stronger than the 
+BEMF with a risk to burn the coils and 
+the blades keep on-wind, which me -
+ans stronger mechanical forces on the 
+blade area, with higher risk of failure.
+• turbine
+• tower
+Turbulence Electrical cable at the 
+bottom of the tower twists 
+more frequently
+Vibrations on the whole 
+turbine and tower may inc-
+rease the risk of failures
+Furling system wear
+Use a higher mast to rise the wind 
+turbine above the surrounding vege-
+tation and obstacles. 
+Untwist the cable at the bottom of the 
+tower more frequently.
+Check the blade balancing more 
+often.
+Strengthen the tail vane.
+• electrical cable
+• turbine 
+• tower
+Rain Infiltration of water in bla-
+des, plywood, rotors and 
+junction boxes
+Corrosion
+Check and repair holes and cracks in 
+the blades and resin parts.
+Be sure the junction boxes are still 
+waterproof or replace them.
+Protect the plywood tail with resin or 
+polyurethane varnish.
+• electrical com-
+ponents
+• rotor
+• stator 
+• blades
+Fig. 4: Guy wires protected by oil
+ Fig. 5: Chain poured into concrete
+
+=== PAGE 9 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen Grundlagenrecherche
+4 Tool list
+4 Tool list
+Maintenance Manual 9
+To lower and raise the tower:
+Tab. 2: Tool list to lower and raise the tower
+Designation Qty. Characteristics
+Pulling wire grip hoist and its cable 
+(and pulley for 24m tower)
+1 Up to 2m40 & 18m height: 
+800kg; 20m cable
+From 3m; 18m or 24m height: 
+1,6t; 25m cable
+Spanner 2 Large size (22, 24 or 26...) for tower & gin pole
+Cords 1 or 2 3 x gin pole length in total
+Multi-use pliers 1 Large one
+Shackle 3 Equal or greater to the grip hoist maximum pulling strengh
+Lubricant 1 WD40 type
+Tripod or sawhorse 1 High enough to avoid blades touching the ground
+To disassemble, check and repair the turbine:
+Tab. 3: Tool list to dismount, check and repair the turbine
+Designation Qty. Characteristics Tower Blades Alternator Frame/tail Elec.
+Hammer/mallet 1 X
+Spanners 2 of 
+each 
+Current sizes for WT: 
+17, 19, 22
+X
+Adjustable 
+wrench
+1 Large enough for the 
+bearing nut
+X
+Small spanners 2 of 
+each
+8 to 13 X X X
+Screwdrivers 2 1 small (to unscrew 
+the terminal blocks) 
+and 1 normal bit
+X
+Cross (or Phi-
+lipps) screw-
+drivers
+2 2 different sizes:
+1 small and 1 bigger
+X
+Cutting clamp 1 X X
+Universal pliers 1 X X
+Jacking screws 3 X
+Cordless drill/
+bit with cross 
+bit
+1 X
+Rags 2 X X X X
+Files 1 X
+Multimeter 1 X
+If your installation is particular (e.g., if the gin pole is disassembled)
+ consider that you may need more tools and some specific parts.
+
+=== PAGE 10 ===
+Grundlagenrecherche4 Tool list
+Maintenance Manual 10
+ 
+Consumables and spare parts:
+Tab. 4: List of consumables and spare parts
+Designation Qty. Characteristics
+Sand paper 1 Different grits
+Silicone 1
+Wood glue 1
+Linseed oil 1 Optional
+Epoxy resin & hardener 1
+Polyurethan varnish 1 In 2 components
+Epoxy glue 1 In 2 components
+Brushes 3
+Anti-corrosive paint 2
+White spirit 1
+Grease 1
+Grease remover 1 Like window cleaner
+Threadlock 1 Optional
+Electrical tape 1
+Iron wire 1 or 2m
+Packs of plastic cable ties 2 Small ones and large ones
+Nuts 6 of each M6, M8, M10, M12 and/or M14; stainless steelBolts 6 of each
+Washers 6 of each D6, D8, D10, D12 and/or D14; normal and large ones; stainless steel
+Wooden screws 20 M5; zinc or stainless steel
+Cable clamps 20 6 or 8 (according to guy wire diameter); galva steelThimbles 10
+Shackles 4 of each 8 and 12 diameter
+Turnbuckles 2 For 6 or 8mm diameter guy wires 
+Junction box 1
+Cables 1m of 
+each
+Mono strand, 2.5mm², 4mm², 6mm², 10mm²
+Electrical terminal blocks 6 of each 10 and 16mm²
+Crimp lugs 10 of each Different sizes
+Fuses 2 Check characteristics of the system (maximum current)
+Set of rolling bearings 1
+
+=== PAGE 11 ===
+Grundlagenrecherche4 Tool list
+Maintenance Manual 11
+Additional materials:
+In case an important reparation (corrective maintenance) needs to be performed on a SWT-system, find out the state 
+of the damages from the operator as precise as possible before going on site, especially on far and remote locations. 
+Take more tools, materials and more spare parts than the ones listed above, and other spare parts, in case of unfore-
+seen damages.
+Tools: 
+• Grinder machine with sand, cut and flap disks
+• Generator and oil
+• Drill
+• Portable welding machine
+Spare parts:
+Tab. 5: Additional spare parts
+Spare parts Qty. Characteristics
+A set of 3-phase cable 15-25m According to tower height, check for initial cable diameter
+Brake switch Same characteristics as the original
+Rectifier and heat sink
+Metal parts (flat, angle, pipe) For blade balancing and for frame/tail/tower
+Removable balancing tower For balancing the blades
+Threaded rods 2m M12 or M14, stainless
+A set of guy wires D6, 50m Galvanised or stainless
+Marine plywood triangle, disk, tail Check for original thickness
+Fig. 6: Usual tools Fig. 7: Consumables
+
+=== PAGE 12 ===
+Grundlagenrecherche
+5.1 Secure the area and the whole system
+Safety warnings:
+A helmet is compulsory for people working in the perimeter of a seize as follows:
+Circle radius equal to tower height (people without helmet should be kept outside 
+the working area that is displayed in figure 9.
+Only 1 person is leading all operations and explains the risks and precautions to 
+others 
+Nobody is allowed to stand in or to pass the lowering tower direction during 
+all the operation (see the red dangerous area in figure 9)!
+Be sure that the wind speed is below 7m/s
+After checking your system in Operation (see section 6), 
+Switch ON the circuit brake (see figure 8).
+Check and remove any obstacles that can disturb the operation, especially at 
+the base, anchors, and in the lowering direction area. Make sure the electric cable 
+will not be pinched during the process.
+ 
+5 Lowering and raising the turbine
+5 Lowering and raising the turbine
+Usually the tower of a Piggott wind turbine is made of pipes assembled and kept in vertical position with guy wires. 
+Turbine lowering and raising operations are done with a gin pole and a grip hoist. It can be dangerous don‘t take unne-
+cessary risks. The main risk is the tower falling down with the turbine . In worst case, a person can be seriously 
+injured. This can happen in case of:
+ • One or several guy wires break on the same side.
+ • A grip hoist cable breaks or the cable is released abnormaly (problem with the break lever of the grip hoist)
+ • Strong wind
+To prevent these risks, follow the precaution safety operations.
+A team of at least 2 experienced people is required but 4 people make the work a lot easier.
+Maintenance Manual 12
+Fig. 8: Brake switch
+For the electrical inspection it is important that your turbine is operating. Therefore 
+go to section 6.4 to see the steps that need to be done before lowering the turbine.
+
+=== PAGE 13 ===
+Grundlagenrecherche
+Installing the pulling grip hoist
+Note: it‘s assumed that the gin pole is already fastened to the tower. If this is not the case, you will need to install the 
+gin pole between the foot of the tower and the lift anchor. Start by attaching the grip hoist to the head of the gin pole 
+and the lift anchor. One by one (or together if they are attached at the same part), detach the guy wires from the lift 
+anchor to the head of the gin pole. The tower should always be attached to prevent it falling over.
+5 Lowering and raising the turbine
+Fig. 9: Working area and safety zone
+Maintenance Manual 13
+Fig. 10: Wire pulling grip hoist
+Brake
+Release Lever
+Pulling Lever 
+Fig. 11: Extremity of the gin pole with the grip hoist
+Insert the full wire from the extremity without hook 
+into the hole, going out from the pin side.
+Fasten the grip hoist to the lift anchor with a strong 
+shackle and fasten the grip hoist hook to the gin pole 
+extremity plate with another shackle (figure 11).
+Install the grip hoist properly: 
+Release the grip hoist brake (‘Brake‘, figure 10)
+Pulling Lever : To raise the tower
+Release Lever : To lower the tower
+Brake : ON to activate the hoist
+OFF as on figure 10
+
+=== PAGE 14 ===
+Grundlagenrecherche
+Engage the grip hoist brake (see figure 10).
+Fasten 2 cords between the gin pole and each side anchor (see figure 11). 
+Fasten a cord or a strap on the guy wire in the lowering direction (used to pull the guy wire helping to lower the tower 
+at the beginning of the operation):
+Unscrew the turnblucke that connects the gin pole with the anchor (it can be a piece of chain or guy wire). 
+Remove the safety wire that locks the turnbuckles:
+Put a support like a saw horse or a shipping crate in the lowering direction, where the top of the tower is expected to 
+touch the ground. Place a wooden palette close-by in order to support the tail (see figure 16) so that the blades are 
+facing the sky.
+5 Lowering and raising the turbine
+Maintenance Manual 14
+Fig. 12: Strap on the top guy wire (lowering direction)
+Fig. 13: Guy wire fastenings and safety wire
+
+=== PAGE 15 ===
+Grundlagenrecherche
+5.2 Lower the wind turbine 
+Start activating the front lever (see figure 10) to release the gin pole while pulling on the back guy wire with the strap 
+or cord to help lowering the tower, away from the tower ! as on figure 14 :
+Continue to lower the tower and check that the tower and the gin pole are vertical at any time, otherwise warn the 
+lateral anchor operator to adjust the cord tension. If the tower is oscillating, reduce the rythm of lowering.
+5 Lowering and raising the turbine
+Maintenance Manual 15
+Fig. 14: Pulling top guy wire strap
+Fig. 15: Lowering the tower
+Manpower (4 people if possible):
+ • One person operating the grip hoist, checking the verticality of the tower and the gin pole, 
+ aware of any abnormal thing, and being in command of the team
+ • One person per side anchor maintaining cords and controlling wire tension
+ • One person at the back anchor, away from the lowering direction, pulling the guy wire
+
+=== PAGE 16 ===
+Grundlagenrecherche
+Once the turbine is closer to the ground, adjust the saw horse position taking care that the blades neither touch the 
+ground nor the saw horse.
+When you can reach the turbine, 2 people take the tail carefully and orientate it so that the blades are facing up -
+wards and avoid to turn over. Place the tail in furling position and lean it against a support like a wooden palette to keep 
+the turbine stable.
+ In case of a problem you can stop activating the grip hoist and even raise 
+ back the tower back at any time if necessary changing the arm onto the pulling lever). 
+ 
+ Slacken more turnbuckles and even cable clamps if wires are too tensed 
+ (should not happen if anchors are well aligned and at the same level)
+5 Lowering and raising the turbine
+Maintenance Manual 16
+If you have to leave the tower down for a long time, 
+don‘t leave the grip hoist in the rain or snow. 
+Take down the gin pole, and remove the grip hoist temporary.
+Fig. 16: Turbine lowered
+
+=== PAGE 17 ===
+Grundlagenrecherche
+Removing the alternator & frame
+First, remove the tail from its hinge while someone holds the alternator. If there is a losse washer on the top of the tower, remove 
+it.
+Disconnect the 3-phase cable into the junction box and remove the alternator and frame from the tower top hinge.
+For testing and inspection see section 6.2 Alternator and frame.
+Removing the blades
+Before removing the blades, make sure there is a mark to locate the 
+position of the rotor blades towards the alternator and a threaded rod.
+ 
+If not, make a mark on a threaded rod and on the triangle that supports 
+the blades (figure 17)
+Remove the nuts and washers and take the blades off slowly by 
+pushing it at the root of each blade at the same time. 
+Put it in a safe place, where nobody can damage it.
+5 Lowering and raising the turbine
+Fig. 18: Marks on blades and triangle
+Fig. 17: Mark on a threaded rod and triangle
+Maintenance Manual 17
+If you need to dismount the blades, be sure there are some marks 
+on each blade and on each maintaining piece (disk and triangle) 
+to locate their position (figure 18), 
+before disassembling them. If not, make these marks .
+Be careful that the 3-phase cable does not slip down inside the tower, hold it ! 
+Make a knot with the cable or fix something to the cable.
+5.3 Dismount the wind turbine
+ 
+According to the maintenance level, you will not need to remove the alternator, but just the blades. 
+In this case, skip the part “Removing the alternator & frame“ and go directly in the next section “5.4 Reinstalling the 
+turbine”, “Reinstalling the blades“.
+
+=== PAGE 18 ===
+Grundlagenrecherche
+5.4 Reinstalling the turbine
+Reinstalling the alternator & frame
+Insert the washer (if it is apart of the tower stub) on the top of the tower and apply some grease on it and on the tower 
+stub.
+Fasten an iron wire at the extremity of the 3-phase cable coming from the tower and insert the cable with the iron wire 
+inside the yaw pipe of the frame.
+Connect the 3-phase cables in the junction box, if necessary put new terminal blocks and fasten the cables to the 
+frame with cable ties.
+Put some grease on the tail hinge.
+Insert the tail onto the hinge in furling position while 1 or 2 persons push the alternator to orientate the studs to-
+wards the sky. Place the tail against its support (see figure 20 below).
+5 Lowering and raising the turbine
+Fig. 19: Installing the alternator & frame Fig. 20: Installing the tail
+Maintenance Manual 18
+Fig. 21: Installing the blades
+Reinstalling the blades
+Be sure that alternator and tail are stable before 
+mounting the blades
+Check for the marked threaded rod, place and insert the 
+blades prudently. 
+Put the washers and nuts.
+Before tightening, check the position of the blades 
+towards the tower: put each blade (one by one) parallel 
+to the tower to check the distance between the blade tip 
+and the tower. Repeat the operation for each blade to get 
+the same distance everywhere.
+Adjust the clamp of each nut to set the gap between each tip blade and the tower (tighten the nut of a blade more if it 
+is too far from the tower)
+Screw and tighten the lock-nuts and eventually apply threadlock for each nut.
+
+=== PAGE 19 ===
+Grundlagenrecherche
+5.5 Raise the tower
+Place the arm on the pulling lever of the grip hoist and start to activate the lever slowly, while holding the tail and the 
+blades (figure 22) because they will try to open abruptly and they can touch the ground (and be damaged). 
+Don‘t stay below the tower !
+Fig. 23: Grip hoist to raise the tower
+Fig. 22: Holding tail and blades
+5 Lowering and raising the turbine
+Maintenance Manual 19
+Once the tower is almost in vertical position, pull on the lowering direction top guy wire with the fastened strap (see 
+figure 14). That avoids the tower making an abrupt motion to drop into the vertical position because the weight of the 
+gin pole is pulling the tower backwards.
+At the end of the operation, check the vertical position of the tower with a level in all 4 directions, and also by eye for 
+upper parts of the tower (see figures 24 & 25).
+Check the tension of all guy wires and adjust them. Tighten the turnbuckles and/or adjust the cable clamp positions.
+Everybody goes back to each anchor as described above in 5.2 Lower the wind turbine. 
+At least 2 people staying close to the turbine. 
+Make sure the strap is still in position on the top guy wire in lowering direction.
+
+=== PAGE 20 ===
+Grundlagenrecherche
+Fasten the turnbuckle linked to a chain or a piece of a guy wire to the lift anchor.
+Once the gin pole is fastened securely, remove the grip hoist (hook, shackles, etc.) and the lateral cords.
+Check that all guy wires and all fastenings like cable clamps, turnbuckles and shackles are well tightened and secured.
+Secure the turnbuckles with a guy wire or a piece of an iron wire (see figure 13).
+Finally unleash the turbine (switch OFF the brake).
+Fig. 24 : Verticality check at the bottom of the tower
+5 Lowering and raising the turbine
+Maintenance Manual 20
+Before removing the grip hoist, 
+the gin pole should be fastened to the anchor point. 
+Fig. 25 : Verticality check of the upper parts of the tower
+
+=== PAGE 21 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen
+Bearbeiter_in 21 von 46
+Grundlagenrecherche
+6. Maintaining your wind turbine system
+6.1 Blades 
+Wooden blades
+Inspect the general condition of the blades. Look for cracks, holes and other damages. Take special care of the leading 
+edge. If the leading edge is damaged you can fix it using epoxy resin. You can reinforce it using blade tape.
+Even though blade tape is expensive it gives very good results. 
+If you observe severe crack in the direction of the wood fibre, you might need to replace the blade.
+It is very important to put a new layer of blade surface protection (linseed oil, polyurethane, etc.) each time you do a 
+maintenance. Especially if you used linseed oil: It is better to warm the linseed oil and to apply as many layers as possible.
+Another less ecological but efficient option is to use varnish, polyurethane works very well and lasts quite long. 
+Remember to sand the surface of the blade lightly with (using a rough sand paper) before applying any product.
+In order to facilitate the maintenance you can paint your blades with 2 different colours. Once the top paint is removed 
+you will see the colour underneath indicating that it is time for a maintenance.
+Check that the balancing weights are well fixed. 
+6 Maintaining your wind turbine system
+Maintenance Manual 21
+Fig. 26: Damaged plywood
+Fig. 27: Big washer
+Fibreglass blades
+Inspect for cracks within the resin of the surface. Fix them with a proper 
+product if you see any cracks. Otherwise the water can get inside and 
+damage the whole blade. 
+It is also recommended to clean the blades regularly (window cleaner 
+was found to work very well for that purpose).
+Plywood parts
+If the plywood looses one or two layers (figure 26): take out the layer and 
+apply the same product as used for the blades. 
+Change the plywood if it is badly damaged. 
+An option could be using a metal piece made from stainless steel or alu-
+minium instead of plywood. 
+You can use larger washers or one big “washer” (figure 27) for the 3.6m 
+and 4.2m turbine diameter, especially in a gusty and turbulent instal-
+lation site. 
+For the vane plywood, see “Frame and tail“ in section in “6.2 Alternator 
+and Frame“.
+Despite the fact that wood is a very good material for the blades, 
+it needs some care because the tip is running at around 200 km/h. 
+Poor quality plywood does not seem to last very long 
+on humid, sandy or salty external conditions.
+
+=== PAGE 22 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen
+Bearbeiter_in 22 von 46
+Grundlagenrecherche
+Blade balancing
+Check the blade balancing while the turbine is spinning. If the tail vane is having quick left and right movements, your 
+blade might need a new balancing. 
+If there is no wind you can also check the balance of the blades with the tower lying on its trestle. 
+Take special care with the screwing of the balancing weight. Use a sufficient number of screws (at least 2) and that are 
+long enough (but should not touch the screws between plywood disk and triangle parts and the blades), otherwise the 
+balancing weights might thrown off. Use stainless screws.
+If you forgot how to do the blade balancing, have a look into your construction manual.
+6 Maintaining your wind turbine system
+Maintenance Manual 22
+
+=== PAGE 23 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen Grundlagenrecherche
+6.2 Alternator and frame 
+Alternator disassembly
+This action should be performed if you encounter one of these 2 problems: 
+a) Failure of the bearings or 
+b) Friction between rotor and stator. 
+It should also be done every 3 years. 
+You will need the 3 jacking screws for this operation. 
+Never put your fingers between the rotor disks, as they can be pinched!
+6 Maintaining your wind turbine system
+Fig. 28: Alternator disassembly Fig. 29: Index threaded rod and hole
+Maintenance Manual 23
+The overall procedure operation is to take off the front rotor, then the stator and finally the back rotor but before proces-
+sing find the index hole (figure 29) or the mark on the stud which indicates alignment for reassembling.
+If you can‘t find it, make a new one on the stud and the two rotors (before disassembling). 
+Remember that it is very important to have this position marked.
+Unscrew the nuts from the front rotor. 
+Screw the 3 jacking screws that go into the tapered hole. Screw them simultaniously to keep both rotors parallel all the time. 
+When you have reached 10cm, the magnet field is weak enough for you to pull the rotor away. 
+Store it in clean, dry place, away from metal components.
+Take away the stator. Remember the stator position (it should be the cable at the bottom).
+The rotors should be at equal distance all the time.
+
+=== PAGE 24 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen Grundlagenrecherche
+If you detect significant play in the hub, open everything to check and clean or change the roller bearing (see the pro -
+cedure next page). 
+If the hub shaft is not welded, unscrew the nuts behind the bearing hub rotor of each stud and remove all the studs from 
+the back rotor. 
+Remove the back rotor carefully and put it in a safe place, far from the other rotor.
+Check the stator and rotor for cracks in the resin structure, for friction and for wires with missing enamel. You will need 
+to change magnets if they are corroded (figure 32). Cut the resin and replace the corroded one with a new magnet. Refill 
+the replaced material with new resin and repaint the whole rotor. Sometimes resin cracks occur at the edge of the rotor 
+(figure 33). Take away the old resin that comes up and replace by a new one. Repaint the whole rotor.
+If any of the copper wires is without enamel, you should apply some resin or a bit of glue (like epoxy adhesive). 
+You also need to find the cause of the problem and fix it (see Troubleshooting on page 40). 
+Check that you have the same resistance value between the phases by using a multimeter. 
+Check the 3-phase cable that comes out of the resin. 
+6 Maintaining your wind turbine system
+Maintenance Manual 24
+Fig. 30: Front rotor with the 3 jacking screws Fig. 31: Friction on the stator
+Fig. 32: Damaged rotor Fig. 33: Cracks in resin in the rotor edge Fig. 34: Stator that needs to be changed
+
+=== PAGE 25 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen Grundlagenrecherche
+Replacing the roller bearings
+Bearings need to be replaced if the rotor rubs against the stator or when the turbine no longer turns. They should be 
+repacked with grease every 3 years or more frequently if necessary. 
+Usually you will require two different sets of roller bearings: 
+1) The basic kit (figure 34) with the two inner cones and the two roller bearings.
+2) The full kit (figure 35) with the basic kit plus the rubber sealing, the nuts, the washer, the safety pin (sometimes 
+optional) and the cap (sometimes optional).
+Remember: You have to change both roller bearings at the same time.
+We recommend to get the full kit as it‘s good to have spare parts like a safety pin and it‘s hard to get rid of the rubber 
+sealing without damaging it. Use quality brands like SKF or SNR if possible.
+Make sure that your working space and your hands are clean of dust when you replace the bearings. 
+You can keep the shaft screwed on the nacelle during the whole operation.
+Take out the cap by gently knocking it out with a chisel. 
+Depending on your hub: take off the safety pin and the nuts or strike out the nuts with a suitable drift.
+Be careful with the nuts as you may encounter left hand thread or right hand thread!
+6 Maintaining your wind turbine system
+Maintenance Manual 25
+Fig. 35: Bearings full kitFig. 34: Bearings basic kit
+Fig. 36: Exploted view of a whole bearing
+
+=== PAGE 26 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen Grundlagenrecherche
+Take away the flange and remove the rubber seal using a screwdriver (figure 37). If you do it gently you may be able 
+to re-use the rubber seal.
+Take out the outer shell by knocking it gently with a suitable drift. Keep it straight by tapping evenly on opposite sides 
+and take care not to scratch the seating (figure 38). If you should damage the seating you can sand it with a 400 sand 
+paper. 
+It can be tricky to press the new bearing shell into it‘s seating. The easiest thing is to use the old shell: Cut through 
+with an angle grinder to make it less rigid (figure 39) and use it as a drift to put the new shell home. Use a hammer 
+large enough or a hammer plus a socket to make sure that the pressure is well divided all around the shell (figure 40). 
+You can also use a vice to keep stable the shell while knocking.
+6 Maintaining your wind turbine system
+Maintenance Manual 26
+Fig. 37: Remove the seal
+ Fig. 38: Take out the outer shell
+Fig. 40: Put the new shell home
+Fig. 39: Cut the shell with an angle grinder
+Fig. 41: Lock the nut
+
+=== PAGE 27 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen Grundlagenrecherche
+Don‘t mix up the sense of the shell!
+Grease the bearings thoroughly, with bearing grease but do not jam them full of grease.
+Start by putting the rear bearing on the shell, then assemble the rubber seal. Put it on the shaft and then fit the second 
+bearing followed by a washer and a nut. Tighten the nut, spin the hub and then slack it off a quarter turn or so to reduce 
+stress on the bearing. 
+Depending on the kind of hub: 
+- Use the safety nut and safety pin
+- Lock the nut by striking it on both sides with a burin (see figure 41).
+ 
+Add some grease in the cap and put it back gently. 
+You can find a video animation on “how to open and change the bearing“ on the following website: 
+http://www.tripalium.org/blog/default/post/id/330-nouvelle-video-danimation
+Note: some people experienced problems with freedom in the conical bearing especially with 4.2m diameter turbines. 
+The problems occur after few years when the rotor rubs the stator. Better to use “NE“ bearing that that comes with 2 
+deep groove bearings. We use “Knott” vehicle bearing houses.
+Alternator assembly
+Conduct the disassembly procedure in reverse. Take lots of care while approaching the magnet rotor. Magnets must 
+face each other. Use the index hole to find the correct position.
+Assemble everything and tighten well all nuts. 
+Unscrew the jacking screws at the same time until you can pull them out freely.
+Apply thread lock to all stator studs and at the back of the hub. A drop of thread lock is enough. 
+Check the gap between the rotors and the stator. The gap between a rotor and the stator should be around 2 or 3mm. 
+Remember that the most important thing is the voltage at 60rpm (see table 6).
+You can adjust the gap by adding or removing nuts and washers. 
+Check the voltage at 60rpm.
+Tab. 6: Voltage at 60 rpm
+Ø Turbine 1.2m 1.8m 2.4m 3m 3.6m 4.2m
+12V 1.9 2.3 2.9 3.5 4.2 5.2
+24V 3.4 4.2 5.3 6.5 7.7 9.4
+48V 6.8 8.4 10.6 12.9 15.6 18.8
+350V - - - 41.6 62.6 52.2
+6 Maintaining your wind turbine system
+Maintenance Manual 27
+
+=== PAGE 28 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen Grundlagenrecherche
+ Electrical connection
+Check the waterproofness of the junction box in the holes where the cables come in and out. If it is not waterproof , 
+change the junction box, but lower the tower before disconnecting the cables inside this junction box !
+The cables should come in and out at the bottom of the junction box, that reduce risk that rain comes into it.
+Check the tightness of the terminal blocks and make sure that it has the correct tightness. This can save your turbine: 
+We have already seen a wind turbine that was saved, hanging only by the terminal blocks (figure 42).
+6 Maintaining your wind turbine system
+Maintenance Manual 28
+Fig. 42: Fall avoid by tight terminal block
+ Fig. 43: Reinforced tail
+ Frame and tail
+Check the metal-frame for rust and cracks in the welds. 
+Check all the other moving parts (tail hinge pipe) and if necessary, add some 
+new grease. Check the condition of the washer inside the bearing and if neces-
+sary, replace it. If the washer is missing, add one. 
+We recommend to have one welded washer and one loose for both tower and 
+tail hinge pipes. 
+Sometimes the tail and tower hinge pipe are wear down (less than 1mm thick -
+ness), usually because a thin diameter pipe has been used (2 or 3mm). So you 
+will need to replace them by a thicker pipe (4 or 5mm)
+Check for cracks in the welding of the frame and tail vane (figure 44 displays 
+a crack in the yaw pipe due to low end stop on a very turbulent site - the 3,6m 
+turbine was only 2 years-old).
+If necessary, reinforce the structure (figure 43).
+Check the tightness of all the nuts on the tail vane.
+Fig. 44: Crack in the tail pipe
+ 
+Note: An unexpected low production can be due to a light tail vane. You can 
+check the surface and thickness of the plywood wind vane and add some weight 
+on the tail vane.
+If you notice wooden tail cracks at the end of the brackets, you can extend the tail 
+boom to the middle or end of the tail plywood and change the 2 diagonal brackets 
+by 2 vertical ones (figure 45). 
+Fig. 45: Tail brackets
+
+=== PAGE 29 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen Grundlagenrecherche
+6.3 Tower and foundation
+ Tower
+Once the tower is down have a general look at the tower looking for rust, missing bolts, cracks in welding.
+Take special care at the tower yaw pipe, it‘s the one that are subject to the highest wear.
+Check all the bolts on the tower, mast base and gin pole axes, turnbuckles and shackles. Don‘t forget to add thread-lock 
+while tightening.
+Check if the cable thimbles are in their correct position.
+Check if all cable clamps are well tightened. If they start to rust you can protect them with grease.
+Check if all shackles are secured (figure 46).
+Check if all turnbuckles are secure and if bolts are well tightened.
+Check the general condition of the guy wires. If you see some rust even severe rust (figure 47) you can protect the 
+cables by soaking them in used motor oil. Use some fuel if the oil needs diluting.
+If there is broken cable strand, you need to change the cable.
+Remember that high quality galvanised, even more stainless, guy wires and fastenings last longer, even in harsh con -
+ditions.
+Check the general condition of the cables at the bottom of the tower. It is a wearing part that needs to be changed from time 
+to time, depending on your installation site and on the cable quality. Untwist the electrical cable at the bottom of the tower. 
+Make sure that the cable is free to twist at the bottom of the tower by removing the obstructing material (earth, sand, etc.).
+Check the waterproofing of the junction box, or plug state at the bottom of the tower. Check that the electrical terminals 
+are not too oxidised. Get rid of the inhabitants of the junction box if there are any (see figure 48).
+ 
+6 Maintaining your wind turbine system
+Fig. 48: Inhabitants in a junction box
+Fig. 47: Rusty guy wire
+Fig. 46: Secured shackle
+Maintenance Manual 29
+
+=== PAGE 30 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen Grundlagenrecherche
+Foundation
+In case you have concrete foundations: 
+- check for cracks in the concrete,
+- check the state of the rebar/chain that comes out of the concrete as it is exposed to weather and wear, 
+- clean the base of the tower, especially if it is sandy. 
+If you used a chain attached to heavy anchors buried under ground, dig a little bit to check the chain state. Even high 
+quality galvanised chain rust in the ground (figure 49). Change the chain if it is rusted.
+If you have big pile dig into the ground, check that the pile is not moving in direction on the tower and upward. If you 
+have to tight the guy wires often it can be a proof of a moving pile. 
+If the pile is moving too much, you can secure it with a second one (figure 50) and check on a regular basis how the 
+situation evolves.
+6 Maintaining your wind turbine system
+Fig. 50: Secured anchorFig. 49: Weak chain
+Maintenance Manual 30
+
+=== PAGE 31 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen Grundlagenrecherche
+6.4 Electrical system
+Inspection when the turbine is running
+There is a risk of high voltage and high current during this testing procedure. Be careful.
+The following recommendation are for off-grid and grid-tied systems
+To identify an electrical problem, check the voltage between the phases at the bottom of the tower (1 in figure 51), at the 
+brake switch (2 in figure 51), and on the DC bus after the bridge rectifier (3 in figure 51).
+If the voltage between 2 phases is zero, suspect a short-circuit in the wiring or in the alternator. A pulsating torque hol-
+ding back the blades indicates a short between two of the 3 wires.
+If case of a short-circuit, an easy test is to disconnect the tower wire. If the turbine still does not start, then the short is 
+above: in the tower cable or in the alternator. If the turbine does start, then the short is elsewhere (wiring, rectifier or 
+controller). 
+If no current is found, several possibilities: 
+There may be a short-circuit failure of the alternator windings due to burned coil or insulation failures in wet conditions: 
+In this case lower the turbine to check the stator voltage output.
+Electrical issues can certainly impact energy production. A blown diode in the rectifier or a bad connection in one wire 
+will also have impact on the performance. These faults produce a growling vibration in the machine and uneven volta -
+ges and currents in the 3 wires.
+6 Maintaining your wind turbine system
+Maintenance Manual 31
+Fig. 51: Electrical scheme
+
+=== PAGE 32 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen Grundlagenrecherche
+• Off-grid
+Explanation of figure 52:
+Check the AC-voltage between each phase, it should be the same between each phases (1).
+Check that the bridge rectifier is working properly by measuring the DC-voltage in (2). Also check the DC-voltage in 
+different points of the circuit: Batteries (3), charge controller (4), inverter (5). It should be the same value. 
+Check the AC-voltage output on the inverter (6). 
+If you have a clamp meter check if there is current going into the batteries (7) and/or into the dump-load (8). 
+If your system has a meter, check if the values are in the same range. If you see some significant difference you might 
+need to reset your meter (see procedure in your meter manual). 
+Check if the LEDs or the screen are working on the charge controller. 
+Stalling can occur if the battery voltage falls to below half of its nominal value due to heavy battery discharge or because 
+of a failure. The turbine will be loaded with current at low speed and the blades will stall, preventing the turbine from 
+reaching operating speed.
+6 Maintaining your wind turbine system
+Maintenance Manual 32
+Fig. 52: Off-grid electrical panel
+
+=== PAGE 33 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen
+Bearbeiter_in 33 von 46
+Grundlagenrecherche
+• Grid-tied
+Explanation of figure 53:
+Check the 3-phase voltage input from the wind turbine (1). 
+Check the voltage and the current of the DC bus (2) going to the inverter or the dumpload (3), using the inverter screen 
+or a clamp meter. 
+Check that the inverter disconnection from the grid is working properly by turning off the grid (4). If the wind is strong 
+enough, the tension will rise above the overvoltage protection limit and all the current goes to the dumpload (3). 
+Check the daily, monthly and/or annually yield on the inverter screen. Check if the values are correct (compare annual 
+yield to average wind speed) (5). 
+Check error messages on the inverter (5).
+Check that LEDs or screen are working on the charge controller. 
+Maintenance Manual 33
+Fig. x: Grid tied pannel
+6 Maintaining your wind turbine system
+Fig. 53: Grid-tied panel
+
+=== PAGE 34 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen
+Bearbeiter_in 34 von 46
+Grundlagenrecherche
+Inspection when the turbine is short-circuited
+The following recommendations are for both off-grid and grid-tied systems: 
+At this stage you may have to lower the turbine to do further investigations.
+Switch ON the wind turbine (see figure 8 on page 12).
+Remove the dust from all electrical components (fan, heatsink, dumpload) as it can disturb a proper cooling. 
+Check all the connections. Tighten them if necessary. Not well tightened wires can cause a fire and increase the risk 
+of an electrical shock.
+Check that all ground and metal parts (charge controller, dumpload, etc.) are connected to the same ground using a 
+multimeter on continuity. You should have a bip or OL or small ohm value (figure 54). 
+ 
+Check the diodes assumed your multimeter is equipped with the diode testing position (figure 55):
+• Good diodes: 
+ - Forward diode : 0,2 to 0,8V
+ - Reverse bias: OL
+• Opened (bad) diode: OL in both way
+• Shorted diode: 0 to 0,4V drop in both directions. 
+If your multimeter is not equipped with the diode testing position you can use a multimeter set to the Resistance mode (Ω).
+The forward-biased resistance of a good diode should range from 1000Ω to 10MΩ.
+The reverse-biased resistance of a good diode displays OL on a multimeter. The diode is bad if values are the same 
+in both directions.
+6 Maintaining your wind turbine system
+Maintenance Manual 34
+Fig. 54: Multimeter on continuity position
+ Fig. 55: Diode testing
+
+=== PAGE 35 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen
+Bearbeiter_in 35 von 46
+Grundlagenrecherche
+• Off-grid
+Check the battery bank voltage and the voltage of each single battery. 
+For flood lead acid batteries: Check the level of distilled water by opening the cap. The lead plate should be flooded 
+entirely. Add distilled water if necessary. 
+Check the battery bank connectors. Oxidised ones should be cleaned with sand paper and be protected with some 
+grease (figure 56).
+Check the fuses with your multimeter on continuity position (see figure 54).
+Check the surrounding area of the dumpload and look for signs of overheating or burning. Make also sure the tempe -
+rature in this area is neither too high nor too low. Humidity should be avoided as well. 
+If you need to change a cable or a connector, disconnect the system from the battery bank by switching the fuse or by 
+removing the battery connector.
+ 
+ 
+• Grid-tied
+Check the surrounding area of the dumpload and the inverter, look for signs of overheating or burning.
+Maintenance Manual 35
+Fig. 56: Grease on connectors
+6 Maintaining your wind turbine system
+
+=== PAGE 36 ===
+Grundlagenrecherche7 Service frequency
+7. Service frequency
+Maintenance Manual 36
+Tab. 7: Service frequency
+Frequency Operations Time com-
+mitment
+Method (visual/
+tool...)
+During 
+the 1
+st 
+year
+During the 
+1
+st
+ month
+- Check the electrical installation regularly (batteries and components)
+- Sensitive check (visual and sound) of the wind turbine 
+- Check the cable at the bottom of the tower (open the junction box) to define the frequen-
+cy of untwisting the cable
+- Check if the brake switch is working: switch-off and check if the turbine brakes well
+- Check the vibration of the tower 
+- You can detect if there is a problem with the bearings by putting your ear on the tower 
+ and listen for strange noises
+- Check the tension of the guy wires
+30 minutes
+After 6 
+months
+Lower the turbine and check the tower and the turbine for: 
+- Missing nuts, rusty components, condition of weldings, blade wear, tightness of all 
+nuts, electrical connections, blade balancing
+- Remove the blades to check the alternator if necessary
+- Check if yaw and tail hinges are able to turn freely and add grease if needed 
+0,5 to 1 day
+After 1 
+year
+See section 5. Lowering and raising the turbine and check all parts of the turbine for 
+wear and corrosion
+1 day
+Monthly Check all parts while the turbine is operating:
+- Electrical system (battery voltage or inverter data)
+- Tension of the guy wires (tightness and rust of the fastenings)
+- Foundation, base and anchors of the tower
+- Visual and acoustical check on the turbine (missing nuts, abnormal spinning and/or 
+vibration, etc.)
+30 min
+Yearly (birthday) Lower the turbine and check everything like described in section 6:
+- Blades 
+- Alternator (and bearing eventually)
+- Frame and tail 
+- Tower hinge
+- Tower and guy wires
+1 to 2 days
+Every 3 years - Same as “yearly service” + dismount the alternator and bearings completely
+- Paint metal parts and add a new blade coating
+2 days
+After 9 years - Same as “Every 3 years” + probability to change the inverter, the batteries:
+ Change the blades and the guy wires if necessary
+3 days
+
+=== PAGE 37 ===
+Grundlagenrecherche
+Sensory check-up
+(optical, acoustical)
+Tool check or operation with tool Multimeter check
+Inspection while the turbine is spinning:
+ 
+ 
+Check if there is any strange noise and/or vibration while the SWT is spinning.
+Check if the electrical system is working normally.
+Brake the turbine with the brake switch.
+For grid-tied systems: Disconnect the grid.
+Inspect each of the anchor points. Ensure that all equipment is secure and the guy wires are properly tensi -
+oned. Check to ensure that no strands are broken and the turnbuckle safety cables are in place. Check the 
+state of the anchor point materials (concrete, chain, etc.)
+Install the grip hoist and the gin pole.
+Lower the turbine and continue with the checklist displayed on the following pages.
+8 Check list
+8. Check list
+Maintenance Manual 37
+Inspection should be done with a wind speed below 7m/s.
+
+=== PAGE 38 ===
+Grundlagenrecherche
+8.1 Wind turbine
+Inspect the blades for: 
+ • Cracks noticeable in the wood or in the fiberglass (for resin blade), especially at the blade roots
+ • Leading or trailing edge damage
+ • Condition of the paint (if painted) or coating
+ • Check if balancing weights are still fixed
+Check the rotor and stator for scratches and failures in resin
+Inspect the metal frame for cracks and rust on the welding
+Inspect the condition of the electrical cable and the gripping system
+Check for cracks or loose equipment on the tail-boom and vane
+Check the tightness on the blade nuts
+Check the front bearing for seal integrity and grease loss. Check the thightness of the flange
+Check the play in the hub
+Check the connections in the junction box and the junction box condition
+Check the tail pivot system, it should move freely and have enough grease
+Release the turbine switching the brake OFF and check that the generator turns freely
+Measure the resistance between each phase
+ 
+8 Check list
+Maintenance Manual 38
+
+=== PAGE 39 ===
+Grundlagenrecherche
+Maintenance Manual 39
+8.2 Tower and guy wires
+Check if the electrical cable is twisted and check the condition of the cable.
+Check the tower weldings.
+Check the tightness of the cable clamps.
+Make sure that the tower shackles are secure and/or well tightened.
+Check the tightness of the fasteners (tower and base).
+Check the connection at all ground rods, at the tower and guy wires.
+Check the connections in the junction box and the condition of the junction box.
+8.3 Electrical system
+Make a visual inspection for evidence of heat.
+Check if there are rusted parts (screws, crimp lugs, etc.).
+Remove the dust from all electrical components.
+Check the tightening of the electrical connections
+Check the bridge rectifier
+Check all the ground connections
+Only relevant for off-grid systems:
+Check the general state of the batteries and the water level, refill distilled water if necessary.
+Check the tightening of the electrical connections.
+Only relevant for grid-tied systems:
+Check the production on the inverter and see if the values are relevant:
+• Is electricity generation linked to the estimated wind conditions at the installation site?
+• Is the data well recorded?
+ 
+8 Check list
+
+=== PAGE 40 ===
+Grundlagenrecherche
+The following table is a non-exhaustive enumeration of damages and problems that might occur:
+Tab. 8: Troubleshooting
+Observation Diagnosis / causes Problem Remedies
+Blades are not 
+spinning
+Hub bearing is stuck Lack of grease Add some grease inside the bearing
+Water ingress in hub bearing Replace the corroded parts and the 
+bearing seal
+Nut too tight Loosen the nut
+Roller bearing out of order Change the roller bearing
+Ice in generator Wait for warm weather
+Ice on blade Wait for warmer temperatures/ make the 
+surface blade smoother
+Batteries below their voltage 
+value
+Charge the batteries, you may have to 
+change them
+The brake switch is ON Switch the brake OFF
+Blades are 
+spinning slowly 
+in strong wind
+Stator and rotor are 
+touching (scraping or 
+rubbing sound at low 
+rpm)
+Increase spacing between stator/rotor 
+(use Loctite 243 on threads afterwards)
+Magnet swelling due to cor-
+rosion
+Change the affected magnet
+Damaged roller bearing Change the roller bearing
+Unscrewed or missing nuts on 
+the stator studs
+Tighten them with threadlock
+Debris between rotor 
+and stator
+Turn propeller gently by hand and blow, 
+use piece of plastic or some tape to 
+dislodge debris
+Short circuit Power cable is pinched at the 
+top or bottom of the tower
+Clear the top/bottom of the tower
+Burnt out stator Build a new one
+Burnt out bridge rectifier Find the problem and change the rectifier 
+The brake switch is ON Switch the brake OFF
+Burnt out inverter (grid con-
+nected)
+Find the problem and change the inver-
+ter
+Burnt out charge controller Find the problem and change the charge 
+controller
+Burnt out stator Incorrectly calibrated furling 
+system (tail too heavy or too 
+long)
+Correct the weight problem
+Burnt out charge 
+controller
+All the energy goes into the 
+dumpload. That can suck out 
+your batteries
+Find the problem and change the charge 
+controller
+Wrong cable connection (e.g. 
+wrong connection in power 
+cable)
+Correct the connection
+9. Troubleshooting
+9 Troubleshooting
+Maintenance Manual 40
+
+=== PAGE 41 ===
+Grundlagenrecherche9 Troubleshooting
+Tab. 8: Troubleshooting
+Observation Diagnosis / causes Problem Remedies
+Blade runs 
+too fast, may 
+whistle
+Load disconnected Cable disconnected or wrong 
+connection
+Check all the electrical connections and 
+fuses
+Disconnected dumpload Re-connect the dumpload
+Burnt out bridge rectifier Find the problem and replace the rectifier
+Burnt out voltage regulator Find the problem and replace the voltage 
+regulator
+No grid available and voltage 
+under regulation value
+Problem will be “solved” once the voltage 
+reaches the regulator voltage
+Generator problem Be sure that magnets are facing each 
+other
+Reduce the gap between rotor and stator
+Dumpload Dumpload wrong scaled Change the dumpload
+Battery bank Battery bank too small Increase the capacity of the battery bank
+Broken blade Tail vane hit the 
+blade
+Poor welding of high end and/
+or low end stop
+Redo the welding and/or add some metal 
+pieces to reinforce the tail vane
+Unbalanced blade causing 
+excessive vibration (tail vane 
+jumps off)
+Balance the blade / check the balance 
+weight screw
+Losing a balancing 
+weight
+Wrong number, lenght or poor 
+quality of the screw/s used to 
+attach the balancing weight/s
+Correct the default
+Low quality or exces-
+sively thin wood
+Use a better quality/thicker wood
+Tail, genera-
+tor and tower 
+shake at all 
+or some wind 
+speeds
+Blade out of balance Rebalance the blades
+Guy wire too loose Check the guy wire tension Increase the tension, change or add 
+turnbuckles
+Check for default in the an-
+chors
+Redo the anchors/ add some weight
+Tail vane on the 
+ground
+Blade out of balance Rebalance the blades
+Failure of a tail wel-
+ding
+Reinforce the tail vane and rebalance the 
+blade
+Excessive noi-
+se (whispering 
+noise)
+Trailing edge too 
+thick
+Re-shape the trailing edge
+Hole in the blade Fix it with resin or something equivalent
+Blades not in the 
+same plan
+Correct planarity of the blades
+41Maintenance Manual 41
+
+=== PAGE 42 ===
+Grundlagenrecherche
+Tab. 8: Troubleshooting
+Observation Diagnosis / causes problem remedies
+Excessive 
+noise (vibrating 
+noise)
+Damaged bearing Replace the roller bearing
+Generator roaming Happened on high voltage 
+generator due to copper wire 
+vibration
+Make sure your coils are well wound. 
+Change the number of phases in a new 
+stator (6 at least), use an active rectifier
+Blade(s) out of balance Rebalance the blade(s)
+Batteries not 
+charging
+Dump load constantly 
+activated
+Burnt out voltage regulator 
+(possible due to lightning 
+strike)
+Find the problem and change the volta-
+ge regulator
+Batteries are full, not enough 
+consumption
+Invite some friends to your home
+Batteries reach end 
+of life
+Replace the batteries
+Excessive domestic 
+power consumption
+Reduce your demand or add some 
+more energy production to the system
+No power feed-
+in to the grid
+Electrical connection Check the phase, neutral and ground 
+connection between inverter and grid
+Cable disconnected Re-connect the cable
+Grid disconnected Wait for the grid to come back 
+Inverter monitoring the 
+grid
+Wait for the inverter to connect to the 
+grid/and or the wind blow stronger
+Generator problem See above “Blade runs too fast”
+Low energy 
+production
+Electrical connection Blown diode Change the bridge rectifier
+Bad connection in one wire Redo the connection or change the wire
+Furling system Furls too early Add some weight on the tail vane or 
+change the wind vane
+Wind resource Poor wind site Increase the tower height
+9 Troubleshooting
+Maintenance Manual 42
+
+=== PAGE 43 ===
+Grundlagenrecherche
+Tab. 9 : Logbook
+Wind turbine initial operation date: 
+Date Who Type of mainte-
+nance (frequence, 
+corrective...)
+Problems / observations Work done Produc-
+tion
+(kWh)
+10 Logbook
+10. Logbook
+Maintenance Manual 43
+
+=== PAGE 44 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen
+Bearbeiter_in 44 von 46
+Grundlagenrecherche10 Logbook
+10. Logbook
+Maintenance Manual 44
+Tab. 9 : Logbook
+Wind turbine initial operation date: 
+Date Who Type of mainte-
+nance (frequence, 
+corrective...)
+Problem/observation Work done Produc-
+tion
+(kWh)
+
+=== PAGE 45 ===
+GrundlagenrechercheAppendix
+Appendix [Crash wall]
+Maintenance Manual 45
+Fig. 57: Blown batteries Fig. 58: Broken guy wires Fig. 59: Broken bearing
+Fig. 60: Broken anchor Fig. 61: Broken tail hinge Fig. 62: Burnt stator
+Fig. 63: Burnt Tristar batteries Fig. 64: Loss of balancing weight Fig. 65: Rusted guy wire
+Fig. 66: Rusted rotor Fig 67: Threaded rod too long Fig. 68: Tower too tight
+
+=== PAGE 46 ===
+Seminarhaus ökologischer Schaugarten - Witzenhausen
+Bearbeiter_in 46 von 46
+GrundlagenrechercheAppendix
+Appendix [Crash wall]
+Maintenance Manual 46
+Blown batteries (figure 57): This is what happens when you use a grinder next to your battery bank while it‘s char-
+ging (sparks + hydrogen)
+Broken guy wires (figure 58): A guy wire breakes...
+Remedy: Use good quality guy wire or correctly sized guy wires.Chandlery correct tightness.
+Broken bearing (figure 59): Bearing was loose and the rubber sealing was missing: Destruction of the bearing rolls, 
+one rotor touched the stator, damages on both rotors and stator. 
+Remedy: Keep and/or add rubber sealing. Avoid play in the conical bearing or use NE bearing. 
+Broken anchor (figure 60): A 22 m/s wind finished to cut a chain holding the guy wires already eroded by sand and 
+lead to the falldown of the tower and the turbine. The pin at the tower base came off and couldn‘t avoid the tower fall -
+down. Everything was destroyed except rotors: blades, frame, tail, tower a bit deformed but re-used. 
+Remedy: Change guy wires and chains if wear is observed; pour chain into concrete. Change the tower base, the sta-
+tor, the tail, the frame and replace the 3-phase cable.
+Broken tail hinge (figure 61): On a very turbulent site, the tail was always moving up and down leading to cracks on 
+the hinge at the low stop level. 
+Remedy: Reinforce the welding (see figure 43, page 28) if your turbine is installed on a very turbulent site.
+Burnt stator (figure 62): Wind turbine short circuited for some time. A strong windy day leads to this failure.
+Remedy: In case of strong wind, let your turbine run instead of braking it.
+Burnt Tristar batteries (figure 63): Problem with a battery that lead the burning of the Tristar which then dumped the 
+battery pack energy directly into the dumpload. 
+Remedy: Check your battery bank. Make sure that your charge controller capacity (e.g. if your system gives 40A, a 45A 
+charge controller is undersized). 
+Loss of a balancing weight (figure 64): The turbine lost one balancing weight leading to severe blade unbalancing. 
+The owner was away for few days during a windy period. The turbine might have shake for some days before falling off 
+the tower.
+Remedy: Use a greater number of screws that are long enough for the balancing weight, at least 2 per balancing weight 
+and good quality screws (stainless).
+Rusted guy wire (figure 65): After 6 months old in a sandy area of the African coast with brand new (quality) guy wires 
+Remedy: Car oil or plant oil to protect them from corrosion. 
+Rusted rotor (figure 66): During a preventative maintenance we have seen some cracks in the resin and a little space 
+between the resin and the steel disc. As a consequence we could quite easily remove the block of resin from the disc. 
+Under the resin, the disc was rusted.
+Remedy: Paint the rotor during every maintenance. Paint or galvanise (best solution) the steel disk before putting the mag-
+nets. 
+Thread rod too long (figure 67): 28m tower; 4.2m turbine. On a very windy day, the tail vane hit the blade: blade and 
+stator broken, frame and tail badly damaged. The thread rod was too long so the balancing weight touched the thread 
+rod, breaking the stator and damaging the frame. A problem that could have been avoided by more precise work. 
+Remedy: We changed the design of the tail vane for the 4.2m turbine. Make sure you are checking all details especially 
+on big turbines. The bigger they are, the more precise you have to be. 
+Tower too tight (figure 68): This curvy tower is the result of an excessive tension in the guy wires.
+Remedy: Straighten the tower and slacken the guy wires.
+

@@ -1,0 +1,227 @@
+SOURCE_PDF: manual-05-synthetic.pdf
+
+=== PAGE 1 ===
+WTB-WI-LE-101
+Version 1.3 | 2026-01-17
+Leading Edge Wear and Erosion - Inspection and Protection Work Instructions
+Page 1
+ Leading Edge Wear and Erosion - Inspection and
+ Protection Work Instructions
+Document ID: WTB-WI-LE-101
+Version: 1.3
+Date: 2026-01-17
+Intended audience: Wind turbine blade technicians, rope access teams, O&M; supervisors
+Scope: Field inspection of leading edge wear/erosion, temporary protection, and minor repair pathways on
+composite blades. Excludes spar/spar-cap structural repairs and major laminate reconstruction. For severe
+findings, escalate per Section 4.4.
+Revision table
+Version (date)
+Change
+1.0 (2025-11-02)
+Initial release
+1.2 (2026-01-05)
+Updated severity thresholds and photo requirements
+1.3 (2026-01-17)
+Added tape edge sealing and post-work acceptance checks
+
+=== PAGE 2 ===
+WTB-WI-LE-101
+Version 1.3 | 2026-01-17
+Leading Edge Wear and Erosion - Inspection and Protection Work Instructions
+Page 2
+1.0 TERMS AND DEFINITIONS
+1.1 Leading edge: The forward-most blade edge facing oncoming flow.
+1.2 Erosion: Material loss or surface roughening due to rain, particles, or contamination.
+1.3 LEP: Leading edge protection (tape or coating applied to reduce further wear).
+1.4 Span position: Location along blade length expressed as percent of span (0% at root, 100%
+at tip).
+1.5 Repair class: Categorization used to select action pathway (see Table 3.2).
+2.0 SAFETY
+2.1 General
+Follow site permit-to-work and rescue plan requirements.
+Verify turbine state and lockout/tagout before accessing blade surfaces.
+Use fall protection and tether tools to prevent dropped objects.
+2.2 Stop Criteria (Do not operate if...)
+Do not return turbine to service if any of the following are observed:
+
+Exposed structural fibers over an area larger than 50 cm2.
+
+Leading edge material is missing to a depth greater than 3 mm over a continuous length greater than 300
+mm.
+
+Any crack (through-coat or laminate) intersecting the leading edge with length greater than 100 mm (refer
+to Manual 2 for crack handling).
+
+Loose or lifting protection tape longer than 200 mm that cannot be re-adhered and sealed (risk of peel
+propagation).
+2.3 Chemical and Dust Controls
+Wear respirator suitable for composite dust during sanding.
+Use gloves and eye protection when handling solvents, primers, and adhesives.
+Keep ignition sources away from solvent vapors.
+3.0 INSPECTION
+3.1 Inspection Objective
+Identify leading edge wear, measure severity, document location and extent, and determine if temporary
+protection or minor repair is appropriate.
+3.2 Erosion Severity and Action Table
+TABLE 3.2 (ASCII)
+Class
+Visual Indicators
+Typical Depth
+Action
+E1
+Dull finish, light roughness
+<0.5 mm
+Clean, monitor, record
+E2
+Local pitting, small coat loss patches
+0.5-1.5 mm
+Apply temporary protection
+E3
+Continuous wear band, exposed filler
+1.5-3 mm
+Minor repair + protection
+E4
+Exposed fibers, deep scalloping
+>3 mm
+Stop and escalate (Section 4.4)
+
+=== PAGE 3 ===
+WTB-WI-LE-101
+Version 1.3 | 2026-01-17
+Leading Edge Wear and Erosion - Inspection and Protection Work Instructions
+Page 3
+3.3 Required Measurements and Reporting Fields
+Turbine ID, blade ID, date/time, weather conditions
+Turbine state (stopped, feathered, locked out)
+Span position range (e.g., 20-60% span), side (pressure/suction), edge (leading)
+Damage length (mm), max width (mm), estimated depth (mm)
+Photo set: overview, close-up perpendicular, close-up angled, measurement scale visible
+Notes on contamination (insects, salt, dust), tape condition (if present)
+3.4 Inspection Method
+Perform an overview scan from 0-100% span focusing on 20-60% span where wear is most common.
+Identify and mark areas of roughness or coat loss.
+Clean a small test area with approved cleaner to confirm if discoloration is surface contamination or material
+loss.
+Measure and record damage dimensions using a flexible ruler and depth gauge (or comparative step gauge).
+4.0 PROCEDURE
+4.1 Procedure Overview
+This procedure covers cleaning, preparation, application of temporary protection, and minor repair for erosion
+classes E1-E3. For E4, follow Section 4.4.
+4.2 Materials and Tools
+Approved surface cleaner (non-residue), lint-free wipes
+Abrasives: 120, 180, 240 grit
+Masking tape, measuring tools, marker pencil
+LEP tape kit or field-applied protective film (as specified by site)
+Edge sealant compatible with tape system
+Filler/putty (non-structural) for shallow erosion pits
+Primer (if required by tape system), mixing supplies
+Roller/squeegee, heat gun (low setting), IR thermometer
+4.3 Step-by-Step Procedure (E1-E3)
+Verify lockout/tagout and turbine state. Record turbine state in the work log.
+Confirm weather limits: do not apply tape if surface is wet or if steady wind prevents controlled work.
+Mark the repair zone with masking tape boundaries. Include at least 30 mm margin beyond visible wear.
+Clean the zone using approved cleaner and lint-free wipes. Repeat until wipe shows minimal residue.
+Inspect the cleaned surface under angled light to identify pits and coat loss edges.
+Measure and record length/width/depth and span position. Take the required photo set (Section 3.3).
+For E2-E3: Feather sanding. Use 180 grit to remove loose coating and create a smooth taper at the boundary
+(no sharp steps).
+Vacuum and wipe down. Confirm no dust remains. Allow solvents to flash off fully.
+If pits exceed 1 mm depth (E3): Apply non-structural filler to pits only. Do not build a thick layer. Smooth to
+profile.
+Allow filler cure per product instructions. Verify cure by fingernail test (no tack, no indentation).
+
+=== PAGE 4 ===
+WTB-WI-LE-101
+Version 1.3 | 2026-01-17
+Leading Edge Wear and Erosion - Inspection and Protection Work Instructions
+Page 4
+Sand cured filler flush with surrounding surface (240 grit). Maintain original leading edge contour.
+If required by tape system: Apply primer to the prepared zone. Allow to dry as specified.
+Dry-fit LEP tape. Confirm alignment along leading edge and verify overlap margins.
+Apply tape from center outward using a squeegee/roller to avoid trapped air. Use firm pressure.
+Work tape edges with a roller. If temperature is low, gently warm the tape (low heat) to improve
+conformability.
+Seal tape edges with compatible edge sealant. Apply a continuous bead along both tape edges.
+Remove masking and check for lifted corners, wrinkles, or air pockets. Rework immediately if found.
+Record completion photos: overview and two close-ups showing edge sealant continuity.
+Document materials batch numbers, ambient temperature, and humidity estimate if available.
+Release turbine only after acceptance checks (Section 5.3) are passed.
+4.4 Escalation Procedure (E4 or Uncertain)
+Stop work and notify supervisor.
+Capture detailed photos with scale.
+Tag the location and record span position to nearest 1%.
+Do not apply tape over exposed fibers without explicit instruction.
+Recommend follow-up with structural repair team.
+5.0 CHECKLIST
+5.1 Pre-Work Checklist
+
+Permit-to-work approved and rescue plan confirmed
+
+LOTO applied and verified
+
+Weather suitable for controlled handling of materials
+
+Tools tethered; drop zone established
+
+Correct tape system and edge sealant available
+
+PPE: respirator, gloves, eye protection
+5.2 In-Process Checklist
+
+Cleaned surface shows no residue on wipe
+
+Measurements recorded (length/width/depth/span position)
+
+Boundary feathered (no sharp edges)
+
+Dust removed; surface dry before primer/tape
+
+Tape aligned and applied without major wrinkles
+
+Edge sealant continuous (no gaps)
+5.3 Post-Work Acceptance Checks
+
+Tape adhesion: attempt gentle lift at 3 points, no peeling allowed
+
+No trapped air pocket larger than 10 mm diameter
+
+Edge sealant intact, continuous, and not smeared onto running surface
+
+Leading edge profile smooth to hand and visual inspection
+
+Photos uploaded and work log completed
+
+If any acceptance item fails, rework before returning turbine to service
+
+=== PAGE 5 ===
+WTB-WI-LE-101
+Version 1.3 | 2026-01-17
+Leading Edge Wear and Erosion - Inspection and Protection Work Instructions
+Page 5
+6.0 TROUBLESHOOTING
+6.1 Symptom: Tape edges lift within minutes of application
+Likely causes:
+Surface contamination (oil, moisture)
+Insufficient edge pressure or temperature too low Checks:
+Wipe test on adjacent area; check for condensation Actions:
+Remove tape, re-clean, allow drying time, re-apply with gentle warming and increased edge rolling
+Apply edge sealant only after adhesion is confirmed
+6.2 Symptom: Air bubbles form under tape after application
+Likely causes:
+Application from one side without center-out method
+Surface texture too rough Checks:
+Measure bubble size and location Actions:
+For bubbles <10 mm: work with roller toward edge
+For bubbles >=10 mm: lift and re-lay while warming; if cannot be corrected, replace tape section
+6.3 Symptom: Filler remains tacky beyond expected cure time
+Likely causes:
+Incorrect mixing ratio or low temperature Checks:
+Confirm ambient temperature and mix method Actions:
+Remove uncured filler, re-prep surface, remix properly, and cure within specified temperature range
+7.0 CHANGE LOG
+7.1 Summary of Changes
+Added explicit stop criteria for deep erosion and intersecting cracks (Section 2.2)
+Added edge sealing acceptance checks (Section 5.3)
+Clarified escalation rules (Section 4.4)
+END OF DOCUMENT
+

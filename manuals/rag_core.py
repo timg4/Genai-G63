@@ -52,6 +52,7 @@ def normalize_text(text):
     if not text:
         return ""
     text = text.replace("\r\n", "\n").replace("\r", "\n").replace("\xa0", " ")
+    text = text.replace("\x7f", " ")
     text = re.sub(r"[ \t]+", " ", text)
     text = re.sub(r"\n+", "\n", text)
     return text.strip()
@@ -104,14 +105,73 @@ def load_pdf_with_outline(path):
     return pages, outline_entries
 
 
+def export_pdf_to_txt(pdf_path, out_path, overwrite):
+    if os.path.exists(out_path) and not overwrite:
+        return
+
+    pages, outline_entries = load_pdf_with_outline(pdf_path)
+    section_starts = {}
+    for entry in outline_entries:
+        title = (entry.get("title") or "").strip()
+        page_index = entry.get("page_index")
+        if title and page_index:
+            section_starts[int(page_index)] = title
+
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    with open(out_path, "w", encoding="utf-8") as handle:
+        handle.write(f"SOURCE_PDF: {os.path.basename(pdf_path)}\n")
+        handle.write("\n")
+        for page in pages:
+            page_index = page.get("page_index")
+            if page_index is None:
+                continue
+            handle.write(f"=== PAGE {page_index} ===\n")
+            if page_index in section_starts:
+                handle.write(f"=== OUTLINE_SECTION: {section_starts[page_index]} ===\n")
+            handle.write(page.get("text", ""))
+            handle.write("\n\n")
+
+
+def export_manuals_to_txt(manual_paths, out_dir, overwrite=False):
+    setup_logging()
+    os.makedirs(out_dir, exist_ok=True)
+    exported = []
+    for path in manual_paths:
+        ext = os.path.splitext(path)[1].lower()
+        base = os.path.splitext(os.path.basename(path))[0]
+        out_path = os.path.join(out_dir, f"{base}.txt")
+        try:
+            if ext == ".pdf":
+                export_pdf_to_txt(path, out_path, overwrite=overwrite)
+                exported.append(out_path)
+            elif ext == ".txt":
+                if os.path.exists(out_path) and not overwrite:
+                    exported.append(out_path)
+                    continue
+                with open(path, "r", encoding="utf-8", errors="ignore") as src:
+                    content = src.read()
+                with open(out_path, "w", encoding="utf-8") as dst:
+                    dst.write(content)
+                exported.append(out_path)
+            else:
+                LOGGER.warning("Skipping unsupported manual type for export: %s", path)
+        except Exception as exc:
+            LOGGER.warning("Failed to export %s to txt: %s", path, exc)
+    return exported
+
+
 def load_text_file(path):
     try:
         with open(path, "r", encoding="utf-8", errors="ignore") as handle:
-            text = handle.read()
+            raw_text = handle.read()
     except Exception as exc:
         LOGGER.error("Failed to read text file %s: %s", path, exc)
         return []
-    text = normalize_text(text)
+    if "=== PAGE " in raw_text:
+        pages = parse_exported_txt_pages(raw_text)
+        pages = clean_pages(pages)
+        return pages
+    text = normalize_text(raw_text)
     if not text:
         return []
     return [{"page_index": None, "text": text}]
@@ -137,17 +197,31 @@ def is_heading_line(line):
     if not stripped:
         return False
     lower = stripped.lower()
+    if re.search(r"\.{5,}\s*\d+\s*$", stripped):
+        return False
+    if re.match(r"^\d+(\.\d+)*\s*\(\d{4}[-/]\d{2}[-/]\d{2}\)", stripped):
+        return False
     if re.match(r"^\d{4}[-/]\d{2}[-/]\d{2}\b", stripped):
         return False
     if re.match(r"^\d{1,2}[./]\d{1,2}[./]\d{2,4}\b", stripped):
+        return False
+    if re.match(r"^\d{6,10}$", stripped):
+        return False
+    if re.match(r"^page\s+\d+(\s+of\s+\d+)?$", lower):
+        return False
+    if re.match(r"^[A-Z]{2,}(?:-[A-Z0-9]{2,}){2,}$", stripped):
         return False
     if re.match(r"^(figure|fig\.|table|tab\.)\b", lower):
         return False
     if re.match(r"^\d+(\.\d+)*\s+\S+", stripped):
         return True
+    if re.match(r"^[IVXLCDM]+\.\s+\S+", stripped):
+        return True
+    if re.match(r"^[A-Z]\.\s+\S+", stripped):
+        return True
     if re.match(r"^(element|lesson|tab\.?|table|figure|fig\.?)\b", lower):
         return True
-    if re.match(r"^[A-Z0-9][A-Z0-9 \-:/]{5,}$", stripped):
+    if " " in stripped and re.match(r"^[A-Z0-9][A-Z0-9 \-:/()&,]{5,}$", stripped):
         return True
     return False
 
@@ -170,24 +244,156 @@ def filter_pages(pages, min_page_tokens):
 
 
 def classify_chunk_kind(section, text):
-    section = (section or "").lower()
-    text = (text or "").lower()
-    combined = f"{section} {text}"
-    if re.search(r"\b(terms|definitions|abbreviations|glossary)\b", combined):
-        return "definition"
-    if re.search(r"\b(change log|revision history|document control|version history)\b", combined):
-        return "changelog"
-    if re.search(r"\b(training|course|overview|introduction)\b", combined):
-        return "training_admin"
-    if re.search(r"\b(safety|warning|caution|hazard|ppe)\b", combined):
-        return "safety"
-    if re.search(r"\b(checklist|check list|inspection checklist|qa checklist)\b", combined):
-        return "checklist"
-    if re.search(r"\b(troubleshooting|diagnostic|fault|failure mode)\b", combined):
-        return "troubleshooting"
-    if re.search(r"\b(procedure|work instruction|steps|step-by-step|step by step)\b", combined):
+    section_raw = (section or "").strip()
+    section_lower = section_raw.lower()
+    text_raw = text or ""
+    text_lower = text_raw.lower()
+
+    if re.search(r"\b(procedure|work instruction|step-by-step|step by step)\b", section_lower):
         return "procedure"
+    if re.search(r"\b(checklist|check list)\b", section_lower):
+        return "checklist"
+    if re.search(r"\b(troubleshooting|trouble shooting)\b", section_lower):
+        return "troubleshooting"
+    if re.search(r"\b(safety|stop criteria)\b", section_lower):
+        return "safety"
+    if "inspection" in section_lower:
+        return "inspection"
+
+    if re.search(r"\bstep-by-step\b", text_lower):
+        return "procedure"
+    if re.search(r"\b\d{1,3}\)\s", text_raw):
+        return "procedure"
+    if re.search(r"\bif\b.*\bthen\b", text_lower):
+        return "procedure"
+    if re.search(r"\b(symptom:|likely causes:|checks:|actions:)\b", text_lower):
+        return "troubleshooting"
+    if "troubleshooting" in text_lower:
+        return "troubleshooting"
+    if re.search(r"\b(checklist|check list)\b", text_lower):
+        return "checklist"
+    if re.search(r"\b(do not operate|stop criteria|warning|caution|hazard|ppe|lockout|loto)\b", text_lower):
+        return "safety"
+    if "inspection" in text_lower and re.search(r"\b(objective|frequency|method|requirements|criteria)\b", text_lower):
+        return "inspection"
+
+    if re.search(r"\b(terms and definitions|definitions|abbreviations|glossary)\b", section_lower):
+        return "definition"
+    if re.search(r"\b(terms and definitions|definitions|abbreviations|glossary)\b", text_lower):
+        return "definition"
+    if re.search(r"\b(change log|revision history|document control|version history|revision table)\b", section_lower):
+        return "changelog"
+    if re.search(r"\b(change log|revision history|document control|version history|revision table)\b", text_lower):
+        return "changelog"
+    if re.search(r"\b(training|course|module|certification|participant|instructor)\b", section_lower):
+        return "training_admin"
+    if re.search(r"\b(training|course|module|certification|participant|instructor)\b", text_lower):
+        return "training_admin"
     return "other"
+
+
+def parse_exported_txt_pages(raw_text):
+    page_re = re.compile(r"^=== PAGE (\d+) ===$")
+    outline_re = re.compile(r"^=== OUTLINE_SECTION: (.*?) ===$")
+    source_pdf = None
+    pages = []
+    current_page = None
+    current_outline = None
+    current_lines = []
+
+    raw_text = raw_text.replace("\r\n", "\n").replace("\r", "\n")
+    for line in raw_text.splitlines():
+        line = line.rstrip("\n")
+        if line.startswith("SOURCE_PDF:"):
+            source_pdf = line.split(":", 1)[1].strip() if ":" in line else None
+            continue
+        match = page_re.match(line.strip())
+        if match:
+            if current_page is not None:
+                pages.append(
+                    {
+                        "page_index": current_page,
+                        "text": normalize_text("\n".join(current_lines)),
+                        "outline_section": current_outline,
+                        "source_pdf": source_pdf,
+                    }
+                )
+            current_page = int(match.group(1))
+            current_outline = None
+            current_lines = []
+            continue
+        match = outline_re.match(line.strip())
+        if match:
+            current_outline = match.group(1).strip()
+            continue
+        current_lines.append(line)
+
+    if current_page is not None:
+        pages.append(
+            {
+                "page_index": current_page,
+                "text": normalize_text("\n".join(current_lines)),
+                "outline_section": current_outline,
+                "source_pdf": source_pdf,
+            }
+        )
+    return pages
+
+
+def clean_pages(pages):
+    if not pages:
+        return pages
+
+    def is_noise_line(line):
+        stripped = line.strip()
+        if not stripped:
+            return True
+        lower = stripped.lower()
+        if re.match(r"^page\s+\d+(\s+of\s+\d+)?$", lower):
+            return True
+        if re.match(r"^\d+\s*/\s*\d+$", stripped):
+            return True
+        if re.match(r"^\d{6,10}$", stripped):
+            return True
+        if "www." in lower and re.search(r"\b\d+\s*/\s*\d+\b", stripped):
+            return True
+        return False
+
+    cleaned = []
+    for page in pages:
+        lines = [line for line in (page.get("text") or "").splitlines() if not is_noise_line(line)]
+        text = normalize_text("\n".join(lines))
+        if not text:
+            continue
+        updated = dict(page)
+        updated["text"] = text
+        cleaned.append(updated)
+
+    if len(cleaned) < 5:
+        return cleaned
+
+    counts = Counter()
+    for page in cleaned:
+        unique_lines = set(line.strip() for line in page["text"].splitlines() if line.strip())
+        for line in unique_lines:
+            if len(line) <= 80:
+                counts[line] += 1
+
+    threshold = max(2, int(math.ceil(len(cleaned) * 0.8)))
+    common_lines = {line for line, count in counts.items() if count >= threshold}
+    if not common_lines:
+        return cleaned
+
+    final_pages = []
+    for page in cleaned:
+        lines = [line for line in page["text"].splitlines() if line.strip() not in common_lines]
+        text = normalize_text("\n".join(lines))
+        if not text:
+            continue
+        updated = dict(page)
+        updated["text"] = text
+        final_pages.append(updated)
+    return final_pages
 
 
 def extract_outline_entries(reader):
@@ -295,8 +501,6 @@ def merge_small_blocks(blocks, min_tokens, min_alpha_ratio):
     carry = None
     for block in blocks:
         text = block.get("text", "")
-        tokens = tokenize(text)
-        content_ok = len(tokens) >= min_tokens and alpha_ratio(text) >= min_alpha_ratio
         if carry is None:
             carry = {
                 "page_index": block.get("page_index"),
@@ -312,7 +516,7 @@ def merge_small_blocks(blocks, min_tokens, min_alpha_ratio):
                 carry["page_end"] = block.get("page_end")
         carry_tokens = tokenize(carry["text"])
         carry_ok = len(carry_tokens) >= min_tokens and alpha_ratio(carry["text"]) >= min_alpha_ratio
-        if content_ok and carry_ok:
+        if carry_ok:
             merged.append(carry)
             carry = None
     if carry:
@@ -339,12 +543,13 @@ def chunk_blocks(
         block_tokens = tokenize(block.get("text", ""))
         if not block_tokens:
             continue
-        chunk_kind = classify_chunk_kind(block.get("heading"), block.get("text", ""))
         if (
             add_section_chunks
             and len(block_tokens) <= max_section_tokens
             and len(block_tokens) >= min_section_tokens
         ):
+            section_text = " ".join(block_tokens)
+            section_kind = classify_chunk_kind(block.get("heading"), section_text)
             if len(block_tokens) <= chunk_size:
                 chunk_id = f"manuals::{source_id}::chunk_{chunk_idx:06d}"
                 chunks.append(
@@ -354,8 +559,8 @@ def chunk_blocks(
                         "page": block.get("page_index"),
                         "page_end": block.get("page_end", block.get("page_index")),
                         "section": block.get("heading"),
-                        "chunk_kind": chunk_kind,
-                        "text": " ".join(block_tokens),
+                        "chunk_kind": section_kind,
+                        "text": section_text,
                     }
                 )
                 chunk_idx += 1
@@ -368,8 +573,8 @@ def chunk_blocks(
                     "page": block.get("page_index"),
                     "page_end": block.get("page_end", block.get("page_index")),
                     "section": block.get("heading"),
-                    "chunk_kind": chunk_kind,
-                    "text": " ".join(block_tokens),
+                    "chunk_kind": section_kind,
+                    "text": section_text,
                 }
             )
             chunk_idx += 1
@@ -379,6 +584,8 @@ def chunk_blocks(
             chunk_tokens = block_tokens[start:end]
             if not chunk_tokens:
                 break
+            chunk_text = " ".join(chunk_tokens)
+            chunk_kind = classify_chunk_kind(block.get("heading"), chunk_text)
             chunk_id = f"manuals::{source_id}::chunk_{chunk_idx:06d}"
             chunks.append(
                 {
@@ -388,7 +595,7 @@ def chunk_blocks(
                     "page_end": block.get("page_end", block.get("page_index")),
                     "section": block.get("heading"),
                     "chunk_kind": chunk_kind,
-                    "text": " ".join(chunk_tokens),
+                    "text": chunk_text,
                 }
             )
             chunk_idx += 1
@@ -510,12 +717,19 @@ def build_index(
     all_chunks = []
     for path in manual_paths:
         source_name = os.path.basename(path)
+        source_base = os.path.splitext(source_name)[0]
         source_id = source_id_from_path(path)
         pages = None
         outline_entries = []
         use_sections = False
         if section_manuals:
-            use_sections = "*" in section_manuals or source_name in section_manuals
+            use_sections = (
+                "*" in section_manuals
+                or source_name in section_manuals
+                or source_base in section_manuals
+                or f"{source_base}.pdf" in section_manuals
+                or f"{source_base}.txt" in section_manuals
+            )
         if os.path.splitext(path)[1].lower() == ".pdf" and use_sections:
             pages, outline_entries = load_pdf_with_outline(path)
         else:
@@ -523,11 +737,34 @@ def build_index(
         if not pages:
             LOGGER.warning("No text extracted from %s", path)
             continue
-        if source_name in skip_page_manuals and skip_first_pages > 0:
+        if (
+            skip_first_pages > 0
+            and (
+                source_name in skip_page_manuals
+                or source_base in skip_page_manuals
+                or f"{source_base}.pdf" in skip_page_manuals
+                or f"{source_base}.txt" in skip_page_manuals
+            )
+        ):
             pages = [page for page in pages if page.get("page_index", 0) > skip_first_pages]
             if not pages:
                 LOGGER.warning("All pages skipped for %s", path)
                 continue
+        pages = clean_pages(pages)
+        if not pages:
+            LOGGER.warning("All pages removed during cleanup for %s", path)
+            continue
+        if not outline_entries:
+            outline_from_txt = []
+            for page in pages:
+                title = page.get("outline_section")
+                page_index = page.get("page_index")
+                if title and page_index:
+                    outline_from_txt.append(
+                        {"title": str(title).strip(), "page_index": int(page_index)}
+                    )
+            if outline_from_txt:
+                outline_entries = outline_from_txt
         pages = filter_pages(pages, min_page_tokens=min_page_tokens)
         if not pages:
             LOGGER.warning("All pages filtered due to low text for %s", path)
@@ -538,7 +775,10 @@ def build_index(
                 blocks = split_into_blocks(pages)
         else:
             blocks = split_into_blocks(pages)
-        blocks = merge_small_blocks(blocks, min_tokens=120, min_alpha_ratio=min_alpha_ratio)
+        merge_min_tokens = 60
+        blocks = merge_small_blocks(
+            blocks, min_tokens=merge_min_tokens, min_alpha_ratio=min_alpha_ratio
+        )
         if not blocks:
             LOGGER.warning("No text blocks produced for %s", path)
             continue
@@ -582,6 +822,7 @@ def build_index(
         "skip_page_manuals": skip_page_manuals,
         "min_page_tokens": min_page_tokens,
         "min_alpha_ratio": min_alpha_ratio,
+        "merge_min_tokens": merge_min_tokens,
         "manual_paths": manual_paths,
         "num_chunks": len(all_chunks),
     }

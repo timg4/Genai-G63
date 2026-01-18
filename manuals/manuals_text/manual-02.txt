@@ -1,0 +1,1475 @@
+SOURCE_PDF: manual-02.pdf
+
+=== PAGE 1 ===
+Owner’s Manual 
+ 
+BWC EXCEL 15 
+ 
+Wind Turbine & 
+Powersync III 
+Grid-Intertie Inverter 
+ 
+Rev. 0 
+August 2018 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Bergey Windpower Co. 
+2200 Industrial Blvd. 
+Norman, OK 73069 USA 
+TEL: 405-364-4212 
+FAX: 405-364-2078 
+E-mail: sales@bergey.com 
+Web Site:www.bergey.com
+
+=== PAGE 2 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 2 
+ 
+Contents 
+I. INTRODUCTION ...................................................................................................... 4 
+II. EXCEL 15 SPECIFICATIONS ................................................................................. 5 
+III. SYSTEM DESCRIPTION ...................................................................................... 6 
+A. SPINNER ........................................................................................................... 7 
+B. ROTOR SYSTEM .............................................................................................. 7 
+C. ALTERNATOR ................................................................................................... 7 
+D. MAINFRAME ...................................................................................................... 7 
+E. BACK-UP BRAKING .......................................................................................... 7 
+F. TAIL ASSEMBLY ............................................................................................... 8 
+G. SLIP-RING ASSEMBLY ..................................................................................... 8 
+H. YAW BEARING ASSEMBLY .............................................................................. 8 
+I. POWERSYNC III INVERTER ................................................................................ 8 
+IV. SYSTEM OPERATION .......................................................................................... 9 
+A. NORMAL OPERATION ...................................................................................... 9 
+B. HIGH WINDS ................................................................................................... 10 
+C. PROBLEMS WITH POWER GRID ................................................................... 10 
+D. EMERGENCY SHUTDOWN ............................................................................ 10 
+E. BACK-UP BRAKING SYSTEM ........................................................................ 11 
+V. POWERSYNC III INVERTER................................................................................. 12 
+A. INVERTER SPECIFICATIONS ........................................................................ 13 
+B. Other Specifications ......................................................................................... 13 
+C. Important Inverter Safety Instructions .............................................................. 14 
+D. Installation ........................................................................................................ 15 
+1. Dimensions ................................................................................................... 15 
+2. Locating ........................................................................................................ 15 
+3. Mounting ....................................................................................................... 16 
+4. Electrical Connections .................................................................................. 16 
+5. AC Output Connection .................................................................................. 17 
+6. AC Input Connection (Turbine) ..................................................................... 17 
+7. Earth Ground Connection ............................................................................. 17 
+8. Fuse replacement ......................................................................................... 18
+
+=== PAGE 3 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 3 
+9. Connection example ..................................................................................... 18 
+E. Inverter Operation ............................................................................................ 19 
+F. Touch Screen Display ...................................................................................... 19 
+G. Inverter Fault Codes ......................................................................................... 22 
+VI. TURBINE INSTALLATION .................................................................................. 24 
+A. BWC EXCEL WIND TURBINE and TOWER .................................................... 24 
+B. FUSED DISCONNECT SWITCH ..................................................................... 25 
+C. WIRE RUN AND WIRE SIZES ......................................................................... 25 
+D. POWERSYNC III INVERTER ........................................................................... 25 
+VII. INSPECTIONS AND MAINTENANCE................................................................. 27 
+VIII. Trouble-Shooting Problems ................................................................................. 29 
+IX. Appendix ............................................................................................................. 32
+
+=== PAGE 4 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 4 
+I. INTRODUCTION 
+ 
+ 
+This manual contains important information concerning your Bergey EXCEL 15 wind 
+turbine system and its operational characteristics. We strongly recommend that you 
+read and familiarize yourself with its contents. 
+ 
+At several points in this manual items of special interest or significant impact are 
+highlighted by one of the following indicators: 
+ 
+ 
+DANGER: Hazards or unsafe practices that could cause personal 
+injury or death. 
+ 
+ WARNING: Hazards or unsafe practices which could cause product 
+damage. 
+ 
+ NOTE Significant points of interest. 
+ 
+ 
+ 
+Serial Numbers 
+ 
+Each Bergey EXCEL 15 wind turbine has a serial number located on the tower adapter. 
+The turbine serial number can also be found on the outside of the shipping crate and on 
+the warranty registration card. The blade serial numbers are located on the root pad 
+and also the shipping crate. We recommend that the serial number be copied to this 
+manual for possible future reference. 
+ 
+Bergey EXCEL 15 Serial No.: ________________________ 
+ 
+Bergey EXCEL 15 Blades Serial Numbers: ________________________ 
+ 
+The Powersync III inverter has a serial number label on its right side. We recommend 
+that this serial number also be copied to this manual. 
+ 
+Powersync III Serial No.: __________________________
+
+=== PAGE 5 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 5 
+ 
+ 
+II. EXCEL 15 SPECIFICATIONS 
+ 
+ 
+PERFORMANCE 
+START-UP WIND SPEED 9 mph (4 m/s) 
+CUT-IN WIND SPEED 6 mph (2.5 m/s) 
+RATED WIND SPEED 24.6 mph (11 m/s) 
+AWEA RATED POWER (at 11 m/s or 25 mph) 15.6 kW 
+AWEA ANNUAL ENERGY (at 5 m/s average 29,800 kWh 
+CUT-OUT WIND SPEED none 
+MAXIMUM DESIGN WIND SPEED 134 mph (60m/s) 
+MAXIMUM POWER 22.6 kW 
+ROTOR SPEED 0-150 RPM 
+ 
+MECHANICAL 
+TYPE 3-Blade Upwind, Horizontal-Axis 
+ROTOR DIAMETER 31.5 ft. (9.2 m) 
+WEIGHT 1,400 lb. (636 kg) 
+GEARBOX none 
+BLADE PITCH CONTROL none 
+OVERSPEED PROTECTION Blade stall 
+TEMPERATURE RANGE -40 to 140 deg. F (-40 to 60 deg. C) 
+ 
+ELECTRICAL 
+OUTPUT FORM 240VAC, 1-Phase, 60Hz 
+GENERATOR Permanent Magnet Alternator 
+POWER PROCESSOR Powersync III Inverter 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Wind Speed (m/s) at Hub Height 
+1 m/s = 2.237 mph 
+Power 
+Output 
+(AC kW)
+
+=== PAGE 6 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 6 
+III. SYSTEM DESCRIPTION 
+ 
+The Bergey EXCEL 15 is an upwind horizontal-axis wind turbine designed for 
+distributed generation applications, connected to the power grid on the customer’s side 
+of the utility meter. The complete unit consists of the following major components, as 
+shown in the figure below: 
+ 
+ 1. Spinner 6. Tail Assembly 
+ 2. PowerFlex® Rotor Blades 7. Slip-Rings 
+ 3. Alternator 8. Yaw Bearing Assembly 
+ 4. Mainframe 9. Powersync® III Inverter 
+ 5. Back-up Braking 10. Auxiliary Load (not shown) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Spinner
+PowerFlex®
+Rotor Blades 
+Alternator Back-up
+BrakingMainframe
+T ail Assembly
+Slip-Rings
+Powersync® III Inverter
+Yaw Bearing
+Assembly
+
+=== PAGE 7 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 7 
+A. SPINNER 
+ 
+The spinner (nose cone) is purely cosmetic. 
+ 
+ 
+B. ROTOR SYSTEM 
+ 
+The rotor system consists of three high-technology carbon-fiber PowerFlex® blades. 
+Acting like aircraft wings, the blades convert the energy of the wind into rotational forces 
+that drive the alternator. The PowerFlex® blades are rigidly attached to the alternator 
+and they are fixed pitch. The Excel 15 rotor blades have proprietary airfoils, which were 
+custom designed to provide high efficiency and low noise. 
+ 
+Each blade has a serial number inscribed on its root pad at the inboard end. 
+ 
+ 
+C. ALTERNATOR 
+ 
+The alternator converts the rotational energy of the rotor into electricity. The alternator 
+utilizes permanent magnets and has an inverted configuration in that the outside 
+housing rotates, while the internal windings are stationary. It was specifically designed 
+for the Bergey EXCEL 15 and produces power at low speeds, eliminating the need for a 
+speed-increasing gearbox. Since it uses permanent magnets, the alternator is 
+generating voltage whenever the rotor is turning. 
+ 
+ 
+ DANGER The output wiring of the EXCEL 15 presents a shock hazard 
+whenever the rotor is turning. Caution must be exercised at 
+all times to avoid electrical shock. 
+ 
+ 
+D. MAINFRAME 
+ 
+The mainframe is the structural backbone of the wind turbine. It serves as the 
+attachment point for the rotor/alternator assembly, the tail assembly, the yaw bearing 
+assembly. It also houses the yaw-axis slip-ring assembly and the controls for the back-
+up braking system. 
+ 
+ 
+E. BACK-UP BRAKING 
+ 
+The back-up braking system is an added safety system that prevents rotor overspeed in 
+the event of a failure of the primary speed control system (inverter and dump load).
+
+=== PAGE 8 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 8 
+F. TAIL ASSEMBLY 
+ 
+The tail assembly keeps the rotor aligned into the wind. 
+ 
+ 
+G. SLIP-RING ASSEMBLY 
+ 
+The slip-rings and brushes conduct the electricity generated in the alternator from the 
+moving (as it orients with the direction) wind turbine to the fixed tower wiring. The slip-
+rings are enclosed in the steel mainframe housing to help protect them from the weather 
+and lightning. 
+ 
+ 
+H. YAW BEARING ASSEMBLY 
+ 
+The yaw bearing assembly allows the turbine to freely align itself to the wind direction. 
+ 
+ 
+ 
+I. POWERSYNC III INVERTER 
+ 
+The Powersync III inverter converts the “variable AC” from the Bergey EXCEL 15 
+turbine into utility grade electricity so that it can be connected to the wiring in your home 
+or business. This conversion requires sophisticated electronics and is designed to 
+operate automatically. The Powersync III has a digital display that provides information 
+on the status of the system, its current output power, and its cumulative energy 
+production. 
+ 
+The system also includes an auxiliary load bank that absorbs excess wind energy 
+during strong wind gusts.
+
+=== PAGE 9 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 9 
+IV. SYSTEM OPERATION 
+ 
+ 
+A. NORMAL OPERATION 
+ 
+The Bergey EXCEL 15 produces utility compatible power in the form of 240VAC, 60 Hz, 
+single phase electricity (other voltage options are available). It is connected through the 
+Powersync® III inverter to the utility distribution network in the same manner as 
+household appliances or electrical machinery. When the wind speed is too low to 
+operate the wind turbine, all of the electrical power needed for the home or business will 
+be supplied by the utility company. During these idle periods the Powersync® III will 
+consume approximately 0.3 kilowatt-hours of electricity per day. 
+ 
+When the system begins producing power, the amount of power which must be 
+purchased from the utility is reduced by an amount equal to the output of the wind 
+system. From the perspective of the utility company the wind system output reduces 
+the electrical load they have to supply, just as if you turned off lights and appliances. 
+The output of the wind system fluctuates with the speed of the wind so the 
+instantaneous amount of electricity being saved will be constantly changing. Quite often 
+your home will be served simultaneously by the utility and your Bergey wind turbine. 
+ 
+When the output of the wind system exceeds the power requirements of the house the 
+excess electricity is sent back to the utility. Both the consumer’s right to interconnect a 
+wind system and the utilities obligation to purchase excess power are prescribed by 
+federal law (PURPA, Section 210). The amount you will be credited or paid for this 
+excess production varies state-to-state and sometimes utility-to-utility. If your utility 
+company offers “net metering” then your meter is allowed to turn backwards so that you 
+essentially bank energy, at full value, for less windy periods. This banking can be done 
+over a month or over a year depending on the policy of your state or your utility. If you 
+do not get “net metering” then you will have a second utility meter to register excess 
+production and your utility will pay or credit you for this, typically at less than the rate 
+you pay when you purchase their electricity. 
+ 
+If your utility experiences an outage (blackout) the wind system will cease to produce 
+power so that it does not present an electrical safety hazard to utility repair crews. 
+During a power outage the Excel 15 turbine will come to a stop. When utility power is 
+restored, the Powersync III will automatically return the wind system to full working 
+status following a five minute delay and then a two minute countdown. These time 
+delays are dictated in the UL standards required by the utilities. 
+ 
+The rotor of the EXCEL 15 should begin to rotate when the wind speed reaches 
+approximately 9 mph (4 m/s). Once started, the rotor may continue to turn in winds 
+below 5 mph (2.2 m/s), but the system will not be producing power below this wind 
+speed.
+
+=== PAGE 10 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 10 
+ NOTE All operational wind speeds given assume steady winds, 
+sea-level conditions and moderate temperatures. Hot 
+weather, high altitude, turbulence and gusting winds will 
+reduce system performance. 
+ 
+ NOTE The Excel 15 may exhibit poor start-up performance in light 
+steady winds. The design of the blades is optimized for 
+efficiency and storm protection, which necessitated some 
+sacrifice in start-up characteristics. 
+ 
+The rotor speed will increase with increasing wind speed and the system will produce a 
+higher output. This output increases rapidly because the energy available in the wind 
+varies as the third power (cube) of the wind speed. For example, if the wind speed 
+increased form 5 mph to 10 mph, a factor of two, the energy in the wind would increase 
+from one unit to eight units, a factor of eight (2 to the 3rd power). One result of this 
+relationship is that there is very little energy available in light winds. For the average 
+site, winds in the range of 12-20 mph (5.5 – 9 m/s) will provide most of the system’s 
+energy production on an annual basis. 
+ 
+The Excel 15 will operate at variable speed up to about 20 mph (9 m/s) and about 150 
+RPM. The speed of the rotor is controlled to limit at about 150 RPM. 
+ 
+B. HIGH WINDS 
+ 
+Unlike previous Bergey wind turbines, the Excel 15 does not furl (rotor turned away from 
+the wind). The Excel 15 controls speed and protects itself from high winds by stalling 
+the rotor progressively as wind speeds increase. In sustained high winds the rotor 
+speed is reduced to limit power surges during strong gusts. 
+ 
+C. PROBLEMS WITH POWER GRID 
+ 
+If an abnormal condition occurs on the utility line, such as a voltage fluctuation or a 
+complete interruption, the Powersync III inverter will automatically disconnect the wind 
+turbine from the power grid and bring the rotor to a stop. 
+ 
+ 
+D. EMERGENCY SHUTDOWN 
+ 
+The Bergey EXCEL 15 is designed for unattended operation over an extended period of 
+time. Exceptional situations may occur, however, in which the wind turbine should be 
+shutdown. These situations include: 
+ 
+1. EXCESSIVE VIBRATION - Uneven ice build-up, ice shedding, or blade damage may cause 
+the wind turbine to experience excessive vibration. Always shut the turbine down as soon as 
+an increase in vibration is detected. Any new or excessive vibration in the turbine when ice is 
+not present should be investigated immediately. 
+ 
+2. UNUSUAL SOUND - If the turbine begins making clinking, growling, or other unusual sound it
+
+=== PAGE 11 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 11 
+should be shut down and fully inspected as soon as possible. 
+ 
+3. INSPECTION AND MAINTENANCE - Whenever someone must climb the tower the wind 
+turbine must be shut down. 
+ 
+Shut down of the EXCEL 15 is accomplished by operating (pressing) the red 
+Emergency Stop button on the Powersync III inverter. 
+ 
+ 
+ 
+To release the Emergency Stop, turn the red button clockwise until it snaps outward. 
+This will resume automatic operation of the wind turbine. 
+ 
+ 
+ WARNING: Do not open the disconnect switch on the tower during 
+shutdown. This would allow the turbine to restart and if 
+the turbine tried to overspeed it would trigger the back-up 
+braking system. 
+ 
+ 
+ 
+E. BACK-UP BRAKING SYSTEM 
+ 
+If the primary overspeed protection system fails, the Excel 15 has a back-up braking 
+system located on the wind turbine. It detects an overspeed situation and applies a 
+dynamic brake to bring the rotor to a near stop. You can tell this has occurred if the 
+Powersync III display says “Waiting for wind” and there’s plenty of wind [greater than 15 
+mph (6.7 m/s)], but the rotor does not turn. 
+ 
+It will automatically reset if the wind drops below 2 m/s (4.5 mph). Otherwise, you can 
+manually restart the turbine by activating and then restoring the Emergency Stop button 
+on the Powersync III inverter. 
+ 
+If activation of the Back-up Brake occurs repeatedly we strongly recommend that you 
+contact your dealer or the Service Department at BWC.
+
+=== PAGE 12 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 12 
+ 
+ 
+V. POWERSYNC III INVERTER 
+ 
+The Powersync III inverter is connected to the household or building electrical circuits 
+through a dedicated circuit breaker. Before opening the Powersync III enclosure, the 
+breaker must be turned off and the turbine Emergency Stop must be activated, to avoid 
+electrical shock. 
+ 
+ 
+ DANGER Electric Shock Hazard. Failure to comply will result in death 
+or serious injury. Disconnect all power to the inverter before 
+servicing. Wait at least 5 minutes before opening the inverter 
+door. 
+ 
+Using the utility grid as a reference, the Powersync III inverter converts the output of the 
+wind turbine into utility-compatible power (AC). The Powersync III inverter has been 
+designed for automatic, unattended operation and it is programmed to provide 
+maximum performance from your Bergey EXCEL 15 wind turbine. It is also 
+programmed to safely disconnect the wind turbine in the event of a problem with the 
+utility power and to automatically reconnect the turbine after the problem is remedied. 
+ 
+The LCD digital display on the front of the Powersync III provides information on the 
+status of your Bergey EXCEL 15 wind turbine. The contrast can be adjusted UP or 
+DOWN using hidden buttons on the right side of the display. 
+ 
+ 
+ 
+ 
+ 
+In normal operation the Powersync III will show the status as “Running” and will display 
+the instantaneous Output Power in Watts.
+
+=== PAGE 13 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 13 
+A. INVERTER SPECIFICATIONS 
+ 
+Input – From Turbine 
+Input Voltage Maximum (3 Phase Input) 480 VAC 
+Input Start Voltage Minimum 270 VAC 
+Input Operating Voltage Range 270 to 480 VAC 
+Input Frequency Maximum 47 Hz 
+Input Current Maximum 34 Amps 
+ 
+Output – To Utility 
+Model PSIII-240 PSIII-208 
+Continuous Output Power Maximum 22600 W 18800 W 
+Continuous Output Power Tolerance ±10% 
+Output Voltage Nominal (Single Phase) Line-Line 240 VAC 208 VAC 
+Operating Voltage Range Line-Line 212-264 184-228 
+Output Voltage Nominal (Single Phase) Line-Neutral 120 VAC 
+Operating Voltage Range Line-Neutral 106-132 VAC 
+Continuous Output Current Maximum 90 Amps 
+Continuous Output Current Tolerance ± 10% 
+Voltage Measurement Tolerance ± 10 VAC 
+Operating Frequency Nominal 60 Hz 
+Operating Frequency Range 59.3 to 60.5 Hz 
+Operating Frequency Measurement Tolerance ± 0.5 Hz 
+Output Power Factor 0.95 ± 0.05 
+Temperature Range Normal Operation -4°F to 113ºF (-20ºC to 45ºC) 
+Output Over-Current Protection Maximum 100 Amps 
+Synchronization In-Rush Current Maximum 6.3 Amps 
+Utility Interconnection Trip Time 100 msec 
+Time Measurement Tolerance ± 85 msec 
+B. Other Specifications 
+Dimensions 32.2”H x 24.3”W x 9” D 
+817 x 607 x 230 mm 
+Weight 153 lbs. / 64 Kg 
+Enclosure NEMA Type 1 
+ 
+NEMA 1 indicates that the enclosure is constructed for indoor use only. It provides 
+protection to personnel against incidental contact with the enclosed equipment.
+
+=== PAGE 14 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 14 
+C. Important Inverter Safety Instructions 
+ 
+ 
+SAVE THESE INSTRUCTIONS 
+This manual contains important instructions for Models PSIII-240 and PSIII-208 
+that shall be followed during installation and maintenance of the inverter. 
+ 
+ 
+The output field wiring terminal can be used for connection of a maximum of: 
+One 1/0 AWG wire per terminal (1 wire for each line) 
+ 
+ 
+The input field wiring terminal can be used for connection of a maximum of: 
+One 2 AWG wire per terminal (1 wire per phase per terminal provided). 
+ 
+ 
+The field-wiring terminals shall be connected using the following wire types: 
+ 
+Copper Conductors Only (Input connection) 
+Use No. 8 - 2 AWG, 90 °C copper wire only 
+ 
+Copper, Aluminum or Copper-Clad Aluminum Conductors Only (Output connection)
+ 
+Use No. 6 – 1/0 AWG, 90 °C Copper Conductors 
+Use No. 4 – 1/0 AWG, 90 °C Copper Clad Aluminum, or Aluminum Conductors. 
+ 
+ 
+The following symbols are used as markings on this product with the following meanings: 
+Equipment grounding conductor – 
+ 
+ 
+This inverter is intended for operation in an indoor NEMA 1 compatible environment having 
+a maximum ambient temperature of 45° C (113° F). 
+ 
+ 
+This unit or system is provided with fixed trip limits and shall 
+not be aggregated above 30 kW on a single Point of Common Connection 
+ 
+ 
+CAUTION 
+To reduce the risk of fire, connect only to a circuit provided with 100 amperes maximum 
+branch-circuit over-current protection in accordance with the National Electrical Code, 
+ANSI/NFPA 70. 
+ 
+ 
+Hot surfaces – To reduce the risk of burns – Do not touch 
+The enclosure and the rear heatsink can exceed 70° C (150° F). 
+Note that the input and output circuits are isolated from the enclosure. In accordance with 
+Clause 15.2.1.1 of CAN/CSA-C22.2 No. 107.1, system grounding, when required by the 
+Canadian Electrical Code, Part I, is the responsibility of the installer.
+
+=== PAGE 15 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 15 
+D. Installation 
+1. Dimensions 
+ 
+2. Locating 
+• The inverter must be installed in a weather protected environment. 
+• The inverter emits audible noise when operating. Do not locate the inverter in 
+living spaces or on walls directly connected to living spaces. 
+• For maximum energy production, avoid installing in direct sunlight or in locations 
+that are likely to exceed 45ºC (113ºF) local ambient temperature.
+
+=== PAGE 16 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 16 
+• The inverter will automatically shut down if the temperature is below -20ºC (-4ºF). 
+Protect from extreme cold exposure if this is undesirable. 
+• Enclosure ventilation is to be provided such that the following guidelines are 
+satisfied. 
+o Provide a minimum of 12 inches clearance to the bottom air inlet filters. 
+o Provide a minimum of 6 inches clearance to the outlet side vents. 
+o Use in a well-ventilated area within the maximum ambient temperature 
+rating. 
+• If the inverter is installed in a small structure or out building, the structure must be 
+provided with top and bottom venting of at least 100 square inches at each 
+opening. 
+ 
+3. Mounting 
+• The enclosure, having a NEMA 1 rating, is designed for indoor installation. 
+• The enclosure is provided with four mounting feet with 0.281” dia. mounting 
+holes. 
+• For mounting to a 0.10” thick metal surface, use M6, ¼-20 or ¼-28 bolts grade 3 
+or higher with nuts and flat washers. 
+• For mounting to concrete, use M6 or ¼” bolts using concrete anchors with an 800 
+pound or greater tension rating. 
+• The required bolt length is such that the internal threads need to be 100% 
+engaged. 
+• The enclosure is to be oriented with the conduit openings facing toward the floor. 
+ 
+4. Electrical Connections 
+• Connections are made to the unit via the holes in the bottom of the enclosure. 
+• Holes are sized for 1.5’’ rated conduit. Wiring methods in accordance with the 
+National Electrical Code, ANSI/NFPA 70 are to be used. 
+• It is recommended that at least 12” of flexible conduit be used below the inverter 
+to make alignment easier. 
+• Cutting additional holes in the enclosure is not recommended and voids the 
+warranty on the enclosure against corrosion and water damage. Any damage to 
+the electronics caused by the modification will be your responsibility.
+
+=== PAGE 17 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 17 
+ 
+ 
+5. AC Output Connection 
+• The AC output is single phase and not bonded to ground. 
+• Connect the two single phase 240VAC or 208VAC wires from the distribution 
+panel to the dual fuse block located on the lower left side of the enclosure. 
+• Tightening torque, 
+allowable wire size, 
+and type, for the 
+Field-Wiring 
+Terminals: 
+• 6 AWG to a maximum 
+of 1/0 AWG for 
+Copper Conductors 
+Only 
+• 4 AWG to a maximum 
+of 1/0 AWG for 
+Aluminum Or Copper-
+Clad Aluminum 
+Conductors Only 
+• Wire rated 90°C 
+minimum 
+• 100 lbf-in tightening torque maximum 
+ 
+6. AC Input Connection (Turbine) 
+• Connect the three phase turbine wires to the terminal block located on the lower 
+right side of the enclosure. 
+• The inverter’s wind turbine input must be connected to a 3-phase “delta” or “wye” 
+connection with the neutral not connected to earth ground (left floating). 
+• The inverter must be provided with 3, UL listed fuses rated, 400 VAC minimum, 
+50 Amp maximum for proper protection from the wind turbine input to the unit as 
+well as an appropriate UL listed fuse holder to accommodate the fuses. 
+• Tightening torque, allowable wire size, and type, for the Field-Wiring Terminals: 
+• 50 lbf-in tightening torque 
+• 8 AWG - to a maximum of 2 AWG for Copper Conductors Only 
+• Wire rated 90°C minimum. 
+ 
+7. Earth Ground Connection 
+• Earth ground is to be connected to the two terminals provided inside the 
+enclosure indicated by the earth ground equipment marking. 
+• Allowable wire size range is 8 AWG – 4 AWG. 
+• 50 lbf-in tightening torque 
+• The inverter’s earth ground connections available on both the input and output 
+terminals must be bonded directly to the service entrance’s earth ground which in 
+turn is bonded to neutral. With a second bond, the inverter’s earth ground
+
+=== PAGE 18 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 18 
+connection must be bonded directly to the tower disconnect ground lug which in 
+turn is bonded to the tower’s ground rod. 
+• The input and output circuits are isolated from the enclosure. System grounding 
+when required by the Canadian Electrical Code, Part I, is the responsibility of the 
+installer. 
+ 
+8. Fuse replacement 
+• Warning: For continued protection against risk of fire, replace only with same 
+type and ratings of fuse. 
+• Two output fuses are located in the dual fuse block on the lower left side of the 
+enclosure. 
+• Class T 80A, 300VAC 
+• Two pre-charge fuses are located on the Input/Output PCB board. 
+• Class CC Time Delay, 2.5A, 600VAC 
+• Three input fuses are located in a separate fuse box provided by the installer. 
+Fuse type may vary, but must be UL listed fuses rated, 400 VAC minimum, 50 
+Amp maximum 
+9. Connection example 
+ 
+ 
+As typically the tallest structure in the area, lightning damage is a concern to most 
+inverter customers; especially those customers in areas with frequent cloud to ground 
+lighting. BWC’s warranty does not cover lightning damage to the inverter. A direct 
+lightning strike can easily be in excess of 100kV at 100kA. Proper grounding of the 
+turbine to the tower and running the input wires down the tower in grounded metal
+
+=== PAGE 19 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 19 
+conduit will take care of most of this energy. The standard inverter is capable of 
+withstanding input line to ground surges of about 6kV at 3kA. Contact your distributor or 
+BWC for application specific lightning surge suppression solutions. 
+ 
+E. Inverter Operation 
+ 
+This equipment is a UL 1741 certified1 Utility Interactive Inverter and complies with the 
+requirements of IEEE1547 which is the standard for interconnecting distributed 
+resources with electric power systems. It will not operate in an off-grid or backup power 
+configuration. 
+ 
+The normal operation of the inverter is as follows: When single phase utility power is 
+applied to the output of the inverter, the display will power up and a message stating 
+that the unit is initializing is shown. If there are no faults, i.e. grid voltage and frequency 
+are in tolerance, a countdown timer set for 5 minutes (300 seconds) starts before the 
+inverter is ready to transfer power to the utility grid. The inverter will automatically 
+transfer power to the utility when AC voltages in the range of 30VAC to 600VAC are 
+present at the Turbine input. 
+ 
+As the heatsink heats up after exporting significant power for a period of time the 
+internal cooling fans will activate. The inverter is be able to operate at full power 
+continuously if provided with adequate ventilation and the local ambient temperature 
+stays below 45ºC (113ºF). If the ventilation is compromised or the heatsink temperature 
+exceeds 60°C, the inverter will automatically reduce its output power. 
+ 
+F. Touch Screen Display 
+ 
+The touch screen display located on the front panel of the enclosure provides manual 
+over-ride and status of the inverter’s operation. The touch screen display also provides 
+a Stop and a Reset button. The Stop button is used when it is desired to disconnect the 
+inverter from the power grid and the wind turbine. After Stop is pressed the inverter will 
+remain in a powered-up stand-by mode until Reset is pressed or Grid voltage is 
+removed. When Reset is pressed the inverter will resume normal operation. 
+ 
+The status of the inverter’s operation is shown on the lines one and two of the display. 
+The following table lists the status messages that may appear. 
+ 
+Status Message Description 
+Waiting 
+Initializing 
+The inverter has been reset or that the 5 minute countdown delay 
+is in progress 
+Waiting 
+For Wind 
+The voltage from the turbine is lower than the factory set auto-
+start voltage threshold 
+AC Running The active rectifier is regulating the internal DC Boost voltage 
+Running The inverter is transferring power to the utility grid 
+Fault A fault has occurred. See fault messages 
+ 
+1 Pending
+
+=== PAGE 20 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 20 
+Manual Stop 
+Press Reset The manual stop button has been pressed 
+Fault Limit 
+Press Reset Three faults have occurred in an hours time 
+Disconnected Indicates that a communication problem exists between the 
+display and the inverter. Check for bad cable connection. 
+OV Power Limit 
+The inverter has detected that the output voltage is approaching 
+the over voltage limit and is reducing its output to compensate for 
+the less than ideal current carrying ability of grid connection. 
+ 
+Using the Up and DOWN arrows you can scroll through the additional Powersync III 
+information available, as shown below. 
+ 
+Parameter Description 
+Grid Voltage Magnitude of the connected single phase grid voltage 
+Grid Frequency Frequency of the connected single phase grid voltage 
+Bus Voltage Magnitude of the DC link bus voltage 
+DC Current Averaged value of the DC current 
+Turbine Volts Averaged value of the rectified DC voltage from the Input 
+Output Power Output power displayed in Watts 
+Accumulated Energy Output Energy (kW hours) accumulated over time of operation 
+VREF Used for factory/installer setup 
+IREF Used for factory/installer setup 
+Last Fault 
+Displays the last fault that occurred since the inverter was 
+powered up along with a fault code that may be useful when 
+troubleshooting. 
+Unit Code Rev Indicates the firmware revision of the control DSP 
+Disp Code Rev Indicates the firmware revision of the LCD display DSP 
+ 
+A hidden feature of the display is the contrast adjustment. The right side of the display 
+has invisible up and down arrows that can be used to increase and decrease the 
+contrast of the display. 
+ 
+Grid Voltage 
+This the voltage measured line to line on the output of the inverter. The voltage must be 
+between 212 to 264Vac (184 to 228Vac for 208V units) for the inverter to operate. The 
+line to neutral voltage is important as well, although it is not reported on the LCD 
+screen. It must be between 106 and 142Vac for both 240V and 208V units. 
+ 
+Grid Frequency 
+This is the frequency of the grid and determined by the utility. The frequency must be 
+between 59.4 and 60.4 Hz for the inverter to operate.
+
+=== PAGE 21 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 21 
+ 
+Bus Voltage 
+This is the voltage of the boosted DC link bus that is used to generate the output sine 
+wave. This voltage should stay between 200 and 570 Vdc but will not trip off until it 
+reaches 680Vdc. 
+ 
+Auxiliary Load Current 
+This is the current going to the auxiliary load to control the speed of the turbine. 
+ 
+Turbine Volts 
+This is the DC voltage of the input measured after the 3-phase AC input is rectified. 
+The inverter will begin exporting power when this voltage exceeds 85Vdc. This voltage 
+should never exceed 690Vdc. 
+Vdc = Vac * 1.41 
+ 
+Output Power 
+This is how much real power in Watts the inverter is currently producing or consuming if 
+it is waiting for wind. Standby power while waiting for wind is about -10W. This 
+measurement is not completely accurate and may not agree with an external meter. 
+ 
+Accumulated Power 
+This is how much real power the inverter has produced or consumed since it was last 
+calibrated at BWC. This measurement is not completely accurate and may not agree 
+with an external meter. 
+ 
+VREF 
+VREF is the input rectified voltage as a raw value. VREF = Vdc * 2.52. 
+Vref is used as an index look-up into a virtual table used for a customizable 32 point 
+power curve table. 
+ 
+IREF 
+IREF is the current request in counts for a given DC input voltage tracked by VREF. 
+Using this configuration the inverter can be adjusted to provide any power curve 
+required. IREF = Idc * 9 
+ 
+Last Fault 
+Fault messages are displayed when a fault occurs and when the last fault parameter is 
+selected. The following table is a list of possible faults that may be displayed.
+
+=== PAGE 22 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 22 
+G. Inverter Fault Codes 
+ 
+Fault Message Fault 
+Code Description 
+INTERNAL ERROR 10 
+IGBT or control logic fault. An occurrence of this 
+fault requires that the unit be completely powered 
+down to reset it. Frequent code 10 faults indicate 
+that the unit should be returned to BWC for service. 
+DC OVER VOLT 1 1000 
+The DC Bus voltage has exceeded its maximum 
+threshold. This occurs if the input power exceeds 
+the output power. This may occur in exceptionally 
+high winds especially if the OV Power limit is active 
+or temperature throttling is occurring. 
+DC OVER VOLT 2 1500 
+The DC Input voltage has exceeded its maximum 
+threshold. This may occur in exceptionally high wind 
+conditions. 
+DC UNDER VOLT 1250 
+The internal DC Boost voltage has dropped below its 
+minimum threshold. This usually indicates a 
+configuration problem and is normally never seen. 
+AC OVER VOLT 2030 
+The AC line voltage has exceeded its maximum 
+threshold. This occurs if OV limiting was not able to 
+influence the high grid voltage. If this happens 
+routinely consider increasing the output wire gage or 
+making arrangements with the utility to upgrade their 
+distribution transformer. 
+AC UNDER VOLT 2280 
+The AC line voltage has dropped below its minimum 
+threshold. It is normal to see this when the inverter 
+has been disconnected from the grid. It may also 
+occur momentarily when large equipment is turned 
+on nearby. 
+TURBINE PHASE 2500 
+Indicates that there is a problem with one or more of 
+the turbine input phases. Bad connection, shorted or 
+missing phase. When the inverter detects excessive 
+ripple on the DC input, it shuts down to protect the 
+turbine from destructive vibration. 
+OVER CURRENT 3000 
+Phase A line current sensed by the converter module 
+has exceeded its maximum current threshold. This 
+may indicate that current is returning on the earth 
+ground wire. 
+OVER CURRENT 3020 
+Phase C line current sensed by the converter 
+module has exceeded its maximum current 
+threshold. This may indicate that current is returning 
+on the earth ground wire. 
+OVER CURRENT 3050 
+The DC Boost phase of the converter module has 
+exceeded its maximum current threshold. Indicates 
+a loss of boost control.
+
+=== PAGE 23 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 23 
+OVER TEMP 4000 
+The internal high temperature threshold has been 
+exceeded. Check that unit has adequate ventilation, 
+that the intake and exhaust vents are not obstructed, 
+and that the cooling fans are operating. 
+UNDER TEMP 4250 
+The internal low temperature threshold has been 
+exceeded. Avoid exposing the unit to temperatures 
+below -20ºC (-4ºF). 
+GROUND FAULT 7000 
+An input phase appears to be shorted to chassis 
+ground. It may require a high voltage measurement 
+device such as a Megger to confirm the fault. 
+AC OVER FREQ 8000 
+The frequency of the utility grid voltage went out of 
+range. The upper range threshold was crossed. If 
+supported (Unit Rev 1005 or greater) this code is 
+also used to indicate that the ROCOF threshold was 
+reached. ROCOF might occur when large 
+equipment is switched on or off. 
+AC UNDER FREQ 8100 The frequency of the utility grid voltage went out of 
+range. The lower range threshold was crossed. 
+ 
+ 
+ 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+When the Powersync III is starting up after initialization, or after the RESET button has 
+been pushed, or after a power outage, it will go through a 300 second (5 minute) 
+countdown that is required by UL 1741. This UL standard also dictates high and low 
+limits for utility voltage and frequency, outside of which the inverter is required to shut 
+down until they return to the acceptable range. This is called a FAULT condition. 
+ 
+There are a number of possible FAULT conditions during which the Powersync III will 
+be protecting itself or the power grid. When a FAULT occurs the Powersync II will shut 
+down (no power production) and a Fault Code will be displayed on the digital display. A 
+list of the Fault Codes can be found in the detailed instructions for the Powersync II 
+inverter provided in the Appendix. FAULTS will reset themselves automatically; 
+assuming the underlying cause of the fault has been cleared, unless the inverter 
+experiences three (3) FAULTS of any type in a one hour period. In this case a manual 
+RESET is required on the digital display. 
+ 
+ 
+CAUTION If a manual reset is required we highly recommend 
+that you check the FAULT CODE list for indications 
+that there is an equipment or wiring problem that 
+needs addressing. 
+ 
+ 
+One unique feature of the Powersync III inverter is its Soft Grid power limiting capability 
+that can reduce the number of nuisance FAULTS on weak power lines during periods of 
+high turbine power output. On a weak power line the EXCEL 15 wind turbine can, on a
+
+=== PAGE 24 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 24 
+windy day, raise the local utility voltage above the UL 1741 threshold, causing a FAULT. 
+The Soft Grid feature tries to prevent these FAULTS by reducing power output from the 
+wind turbine. When the Powersync II is in this mode the digital display will show “Soft 
+Grid”. 
+ 
+The STOP pad on the digital display will shut down the Powersync III inverter. Press 
+the RESET pad to restart (which will start the 300 sec. countdown). 
+ 
+If the circuit breaker in your home or business load center (circuit breaker panel) trips, it 
+should be reset by first switching it to the OFF position and then to the ON position. If 
+the breaker trips again immediately, or if it continues to trip after brief periods of normal 
+operation, switch the breaker OFF and contact your Bergey dealer for assistance. 
+ 
+The following recommendations will help ensure the safe operation of the Powersync III 
+inverter: 
+ 
+1. Keep all sources of moisture away from the Powersync III enclosure. 
+2. Do not work near the Powersync III with gasoline, paint thinner, or any 
+material which produces flammable vapor. Do not store flammable materials 
+near the Powersync III enclosure. 
+3. Do not open the Powersync III enclosure unless the circuit breaker and 
+Accessible Disconnect Switch (ADC) at the base of the tower have been 
+switched OFF. Note that even with the circuit breaker and ADC switched 
+OFF, a shock hazard will still be present inside the Powersync III 
+enclosure for approximately 15 minutes (as the capacitor voltage drains 
+down). 
+4. Do not block airflow around the Powersync III enclosure in any way. A six-
+inch clearance must be maintained around the sides, top, and bottom of the 
+enclosure for adequate air circulation. 
+ 
+ 
+VI. TURBINE INSTALLATION 
+ 
+Please use the following instructions in assembling and commissioning your system. If 
+you need any additional information, please contact us. 
+ 
+ 
+A. BWC EXCEL WIND TURBINE and TOWER 
+ 
+Please refer to the BWC EXCEL 15 Installation Manual, and any addendum for the 
+specific tower design, for instructions on installing the wind turbine and tower.
+
+=== PAGE 25 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 25 
+B. FUSED DISCONNECT SWITCH 
+ 
+The electrical output of the wind turbine is a three-phase alternating current (AC). We 
+strongly recommend the installation of a fused three-phase AC disconnect switch 
+between the wind turbine and the Powersync II, as shown in the drawing on Page 26. 
+This switch is commonly referred to as an Accessible Disconnect Switch (ADC) and 
+most utilities will require one to be installed. A 60A weather-tight switch box with 45A 
+fuses for the 240 VAC, 60Hz or 220VAC, 50Hz system is recommended. The fuses will 
+help protect the alternator in the event of a wiring, controller, or load short circuit. The 
+fused disconnect switch is normally installed at the base of the tower. 
+ 
+ 
+ CAUTION Do not install a permanent “short circuiting switch” that 
+will provide dynamic braking of the alternator. These 
+switches can be easily misused, leading to serious 
+damage to the alternator. Such damage is not covered 
+by the BWC warranty. 
+ 
+ 
+C. WIRE RUN AND WIRE SIZES 
+ 
+Please refer to the BWC EXCEL 15 Installation Manual for recommended wire and 
+conduit sizes for the tower-to-Powersync III wire run. Refer to the row labeled “BWC 
+Excel 15” for appropriate wire sizes. 
+ 
+D. POWERSYNC III INVERTER 
+ 
+The Powersync III inverter should be installed indoors, near the main breaker enclosure 
+if possible. The Powersync III is designed to operate in a clean environment and should 
+never be installed outdoors as it is not weatherproof and will be damaged by rain. A 
+minimum of six inches of clearance is required on the top, bottom and sides of the 
+Powersync III to ensure adequate air flow through the enclosure. 
+ 
+The Powersync III should be connected to a dedicated 125A two-pole breaker installed 
+in the main breaker box. System grounding is accomplished by attaching a wire, # 8 
+AWG minimum, from the grounding lug inside the Powersync III enclosure to the panel 
+ground inside the main breaker box. Additionally, the tower “bond” ground wire should 
+be connected to the grounding lug inside the Powersync III enclosure. A typical system 
+wiring schematic for the Bergey EXCEL 15 is shown below. The three AC connections 
+from the wind turbine can be connected to the Powersync II terminals in any order; 
+there is no required phase orientation. 
+ 
+ 
+ DANGER Do not attempt to make the Powersync III connections 
+with energized leads. Always have the wind turbine fully 
+disconnected and the circuit breaker switched to “off” 
+before making the Powersync III connections.
+
+=== PAGE 26 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 26 
+ 
+ 
+All wiring should conform to the National Electric Code or other governing local 
+electrical code. The use of electrical conduit for wiring between components is highly 
+recommended. All terminations should be coated with an anti-oxidation compound to 
+prevent corrosion. 
+ 
+ 
+ CAUTION All loads should be equipped with fuses or circuit 
+breakers to avoid hazards from accidental short circuits. 
+ 
+ 
+ 
+ 
+ 
+10 kW Wind Turbine
+24 m (80 ft) 
+GuyedTower
+Safety 
+Switch
+Power 
+Processing 
+Unit (Inverter)
+Cummulative 
+Production 
+Meter 
+AC Load 
+Center
+
+=== PAGE 27 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 27 
+VII. INSPECTIONS AND 
+MAINTENANCE 
+ 
+ 
+The Bergey EXCEL 15 turbine and tower should be inspected once 90 - 180 days after 
+installation to ensure that no hardware was missed and there are no issues with the 
+turbine. 
+ 
+Following this post-installation inspection, the complete system should be inspected 
+every four years and after any particularly severe weather. Inspections should be done 
+on days when the wind is below 20 mph (9 m/s). 
+ 
+ 
+Check List for Inspections 
+ 
+1. On guyed towers inspect each of the anchor points. Ensure that all hardware is 
+secure and the guy wires are properly tensioned. Check to ensure that no strands 
+are broken and the turnbuckle safety cables are in place. 
+ 
+ WARNING: Loose guy wires or unsecured turnbuckles can lead to 
+tower failure. 
+ 
+ 
+2. Disconnect the inverter at the breaker panel, which will bring the turbine to a stop. 
+Climb the tower. Always use proper safety climbing gear and safe climbing 
+practices. 
+ 
+ 
+ DANGER Only qualified personnel with proper safety equipment 
+should climb the tower. Never climb the tower when the 
+rotor is turning. 
+ 
+3. Inspect the blades for: 
+ A. Cracks in the inner 4 ft. of each blade. This is the most highly stressed 
+portion of the blade. 
+ B. Leading or trailing edge damage. Pay particular attention to the leading 
+edge near the tip of each blade. 
+ C. Condition of the paint. 
+ 
+4. Remove the spinner and hang it from the machine. Check the marker lines on 
+each of the blade attachment and torque plate bolts, retorquing and remarking any 
+bolts that have loosened. Check the front bearing for seal integrity and excessive 
+grease loss. Reattach the spinner and check that it is secure. 
+ 
+5. Open the cover plate on the mainframe. Inspect the slip-rings and brushes. 
+Inspect the back-up brake circuit boards.
+
+=== PAGE 28 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 28 
+ 
+6. Check the rear alternator bearing for seal integrity and excessive grease loss. 
+ 
+7. Inspect the mainframe for cracks. 
+ 
+ 
+8. Check for cracks or loose hardware on the tail boom and fin. 
+ 
+9. Check for corrosion on the alternator. Clean and repaint as needed. 
+ 
+10. While descending the tower, inspect the following: 
+ A. Check that the tower wiring is properly secure. 
+ B. Check all fasteners. 
+ C. Look for any cracks in the tower structure. 
+ D. Check the condition of the guy wire attachment (guyed towers). 
+ 
+11. Check the connection on all ground rods and hardware. 
+ 
+12. Check the disconnect switch. 
+ 
+13. Inspect the wire run, particularly all electrical connections. 
+ 
+14. Check condition of all wiring connections into and out of the Powersync II. 
+ 
+15. Check the fan filters on the Powersync III. 
+ 
+16. Switch the turbine breaker in the breaker panel to ON. Move to a spot where you 
+can observe the turbine. Listen to the sound of the machine as it speeds up. No 
+mechanical sounds, such as a "clunking" or "banging," should be heard. Also 
+watch for any new or significant vibration. The turbine operation should be smooth.
+
+=== PAGE 29 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 29 
+VIII. Trouble-Shooting Problems 
+ 
+The following guide can help to pin-point the cause of operational problems with the 
+Bergey EXCEL 15 wind turbine and the Powersync III inverter For problems or 
+symptoms not found in the following listing please contact the Service Department at 
+Bergey Windpower Co. at Tel. No. 1-405-364-4212, Telefax No. 1-405-364-2078, or E-
+mail: service@bergey.com 
+ 
+Problem Cause(s) Diagnosis Remedy 
+Turbine makes an 
+unusual blade sound, 
+such as whistling or 
+buzzing 
+1. Damaged blade 
+leading edge 
+ 
+2. Blade structural 
+damage 
+1. Have leading edge 
+inspected 
+ 
+2. Have blades 
+inspected. Cracks 
+outboard of the hub can 
+lead to blade failure. 
+1. Consult Bergey 
+Service Department 
+ 
+2. If blade damage is 
+suspected, the turbine 
+should be stopped until 
+it is inspected. Contact 
+your dealer. 
+ 
+Rotor is unbalanced, 
+causing the turbine to 
+move slightly back and 
+forth as it spins 
+1. Uneven ice build-up 
+on blades 
+ 
+ 
+ 
+ 
+2. Blade damage 
+1. Ice on turbine and 
+tower. Turbine ran 
+smoothly before ice 
+storm. Slow rotor 
+speed. 
+ 
+2. No ice. Turbine ran 
+smoothly before 
+1. Do nothing – ice will 
+dislodge in a few days. 
+No not approach the 
+tower. 
+ 
+ 
+2. If blade damage is 
+suspected, the turbine 
+should be stopped until 
+it is inspected. Contact 
+your dealer.
+
+=== PAGE 30 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 30 
+Problem Cause(s) Diagnosis Remedy 
+Turbine makes a 
+banging or rattling 
+sound once per 
+revolution, particularly at 
+low speeds 
+1. Loose spinner 
+ 
+ 
+ 
+2. Alternator rear 
+bearing ring fasteners 
+loose or missing 
+ 
+3. Alternator bearings 
+1. Sound is once per 
+revolution. Inspect 
+spinner. 
+ 
+2. Sound is once per 
+revolution. Inspect rear 
+of alternator 
+ 
+3. Excessive grease 
+leakage. Squeaking 
+sounds at low speed. 
+ 
+1. Have spinner 
+inspected 
+ 
+ 
+2. Have alternator 
+inspected 
+ 
+ 
+3. Have alternator 
+inspected 
+Turbine makes a “fog 
+horn” sound at certain, 
+typically low, wind 
+speeds 
+Electro-mechanical 
+interaction between 
+alternator and inverter 
+that causes transient 
+vibrations in the turbine 
+Sound comes and goes, 
+but occurs at the same 
+wind speed(s) 
+This is normal, but 
+contact your dealer or 
+the Bergey Service 
+Department if the noise 
+is excessive 
+Turbine makes a 
+continuous growling or 
+rumbling sound, which 
+reduces at higher wind 
+speeds 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1. Wiring fault 
+ 
+ 
+ 
+ 
+2. Inverter fault 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3. Alternator bearings 
+Switch fused disconnect 
+on tower to OFF. If 
+growling disappears an 
+electrical problem is 
+indicated. If growling 
+continues a mechanical 
+problem is indicated 
+ 
+1. Check fuses. Check 
+wiring for continuity, 
+phase-to-phase fault, or 
+short to ground. 
+ 
+2. After completing the 
+wiring check, disconnect 
+the inverter and 
+reconnect wiring to the 
+turbine. If the noise 
+disappears an inverter 
+problem is indicated. 
+ 
+3. Check for excessive 
+grease loss 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+1. Repair or replace as 
+needed 
+ 
+ 
+ 
+2. Contact your dealer 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3. Have the alternator 
+inspected
+
+=== PAGE 31 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 31 
+Problem Cause(s) Diagnosis Remedy 
+Rotor turns slowly and 
+does not speed up in 
+higher winds 
+1. Ice build-up on 
+blades 
+ 
+ 
+ 
+2. Short circuit in wiring 
+or inverter 
+ 
+ 
+ 
+ 
+3. Short circuit in tower 
+wiring, slip-rings, or 
+alternator 
+1. Check for ice 
+ 
+ 
+ 
+ 
+2. Open tower 
+disconnect. If turbine 
+spins freely an electrical 
+system problem is 
+indicated 
+ 
+3. The most likely 
+problem is a shorted 
+alternator. 
+ 
+1. Do nothing – ice will 
+dislodge in a few days. 
+No need to furl the 
+turbine. 
+ 
+2. Contact your dealer 
+ 
+ 
+ 
+ 
+ 
+3. Contact your dealer 
+ 
+ 
+Rotor does not turn at 
+all 
+Mechanical failure 
+inside alternator 
+Rotor does not turn 
+even when winds 
+exceed 15 mph (6.7 
+m/s) 
+ 
+Contact your dealer 
+Powersync III display 
+not functioning 
+1. No power to inverter 
+ 
+2. Display or other 
+inverter component not 
+functioning properly 
+ 1. Turn off utility power 
+to inverter, using the 
+dedicated breaker in 
+your breaker panel, for 
+a minimum of 20 
+seconds. Then turn 
+power back on using the 
+breaker. Wait 300 
+seconds (5 minutes). 
+ 
+If inverter does not 
+resume operation, with 
+full display functionality, 
+contact your dealer
+
+=== PAGE 32 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 32 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+IX. Appendix
+
+=== PAGE 33 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 33
+
+=== PAGE 34 ===
+Owner’s Manual Bergey EXCEL 15 Turbine 
+ Page 34
+

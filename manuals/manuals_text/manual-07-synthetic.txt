@@ -1,0 +1,214 @@
+SOURCE_PDF: manual-07-synthetic.pdf
+
+=== PAGE 1 ===
+WTB-WI-LPS-303
+Version 1.6 | 2026-01-17
+Lightning Protection Receptors - Inspection, Testing, and Replace Criteria
+Page 1
+ Lightning Protection Receptors - Inspection, Testing,
+ and Replace Criteria
+Document ID: WTB-WI-LPS-303
+Version: 1.6
+Date: 2026-01-17
+Intended audience: Blade inspection technicians, electrical maintenance technicians, O&M; engineers
+Scope: Routine inspection and field service decisions for blade lightning receptors, receptor leads, and local
+surface damage around receptor sites. Includes documentation requirements and escalation criteria.
+Excludes internal conductor repairs that require blade opening unless explicitly authorized.
+Revision table
+Version (date)
+Change
+1.0 (2025-08-21)
+Initial issue
+1.4 (2025-12-10)
+Added continuity checks and acceptance limits
+1.6 (2026-01-17)
+Added troubleshooting flow and photo/measurement checklist
+
+=== PAGE 2 ===
+WTB-WI-LPS-303
+Version 1.6 | 2026-01-17
+Lightning Protection Receptors - Inspection, Testing, and Replace Criteria
+Page 2
+1.0 TERMS AND DEFINITIONS
+1.1 Receptor: External strike attachment point on blade surface, usually flush or slightly proud.
+1.2 Receptor tip: Exposed conductive surface where attachment occurs.
+1.3 Pitting: Small crater-like marks on the receptor tip caused by strikes.
+1.4 Continuity: Electrical connection quality from receptor to down conductor.
+1.5 Bonding lead: Internal or local conductor connecting receptor to main path.
+2.0 SAFETY
+2.1 General
+Apply electrical LOTO where required by site procedures.
+Treat all conductive parts as potentially energized until verified.
+Use insulated tools for continuity checks where applicable.
+2.2 Stop Criteria (Do not operate if...)
+Receptor is missing, loose, or visibly detached from blade surface.
+Surrounding laminate shows burn-through, softening, or charred area larger than 25 cm2.
+Continuity test fails (open circuit) on any receptor in the inspected set.
+A strike path shows signs of internal heating (persistent burnt odor, melted sealant, or bubbling coating
+around receptor).
+3.0 INSPECTION
+3.1 Inspection Objective
+Verify receptor condition, detect strike damage, confirm local integrity, and ensure electrical continuity within
+acceptance limits.
+3.2 Inspection Frequency Guidance
+Routine visual: at least annually
+After storms or known lightning events: perform targeted receptor inspection within 7-14 days
+High-exposure sites: consider semi-annual checks
+3.3 Receptor Condition Table
+TABLE 3.3 (ASCII)
+Condition
+Visual Signs
+Action
+R1
+Light pitting, no looseness
+Clean, record, continue
+R2
+Moderate pitting or edge chipping
+Measure, monitor, recheck sooner
+R3
+Deep pitting, deformation, or melt marks
+Replace receptor or escalate
+R4
+Missing/loose or surrounding burn damage
+Stop, escalate immediately
+3.4 Documentation Requirements
+Receptor ID/location and span position (e.g., 60-100% span zone near tip)
+Photo set: overview, close-up, close-up with scale, oblique angle showing protrusion/flush
+
+=== PAGE 3 ===
+WTB-WI-LPS-303
+Version 1.6 | 2026-01-17
+Lightning Protection Receptors - Inspection, Testing, and Replace Criteria
+Page 3
+Pit depth estimate (mm) and pit diameter (mm) for largest pit
+Any surrounding discoloration, blistering, or crack patterns
+Continuity measurement result (ohms) and instrument model
+4.0 PROCEDURE
+4.1 Tools and Materials
+Non-metallic brush and cleaner for receptor surface
+Caliper or pit gauge, flexible ruler
+Multimeter (low resistance capability) or approved continuity tester
+Replacement receptor kit (if authorized), sealant, torque tool as required
+Marker, wipes, abrasion pads for surface prep
+4.2 Step-by-Step Procedure: Visual and Mechanical Check
+Confirm turbine state and access authorization. Apply LOTO as required.
+Identify receptor(s) to inspect. Record span position group: 0-20%, 20-60%, 60-100%.
+Clean receptor surface gently. Do not gouge the metal surface.
+Photograph receptor before measurement (close-up with scale).
+Inspect for pitting, melting, cracks around receptor edge, and any lift at the perimeter.
+Check for looseness by applying gentle hand pressure and lateral wiggle (do not pry).
+Measure largest pit diameter and estimate pit depth. Record results.
+Inspect surrounding coating within 50 mm radius for blistering, soot, or heat effects.
+Classify condition using Table 3.3. If R4, proceed to Section 4.5 immediately.
+4.3 Step-by-Step Procedure: Continuity Check
+
+10) Verify tester calibration/zero per instrument instructions.
+
+11) Connect tester leads to receptor test point and approved reference point (per site practice).
+
+12) Measure and record resistance. Repeat once to confirm stability.
+
+13) Decision rule:
+
+IF resistance <= 2.0 ohms and stable THEN pass.
+
+IF resistance is intermittent or >2.0 ohms THEN treat as fail and proceed to Section 4.5.
+
+14) For pass results, continue inspection for remaining receptors.
+4.4 Step-by-Step Procedure: Local Replace (Authorized Cases Only)
+
+15) Confirm you are authorized to replace the receptor type in use. If not authorized, escalate.
+
+16) Mark orientation and remove old receptor per kit instructions. Avoid enlarging the opening.
+
+17) Inspect seat area for burn marks or laminate cracking. If found, stop and escalate.
+
+18) Prepare seat area: clean, lightly abrade, remove debris. Ensure surface is dry.
+
+19) Install new receptor and torque to specified value if applicable.
+
+20) Apply sealant around perimeter to prevent water ingress. Smooth bead and remove excess.
+
+21) Allow sealant cure per product spec. Protect from rain during cure.
+
+22) Re-test continuity. Record final resistance.
+
+23) Photograph completed installation (overview and close-up).
+
+=== PAGE 4 ===
+WTB-WI-LPS-303
+Version 1.6 | 2026-01-17
+Lightning Protection Receptors - Inspection, Testing, and Replace Criteria
+Page 4
+4.5 Escalation Procedure (Fail or Severe Damage)
+
+24) Stop work and notify supervisor if any of the following occur:
+
+continuity fail
+
+missing/loose receptor
+
+burn/char area >25 cm2
+
+laminate cracking radiating from receptor
+
+25) Mark the affected area boundary and capture full documentation (Section 3.4).
+
+26) Recommend turbine remains stopped until engineering review if stop criteria are met.
+5.0 CHECKLIST
+5.1 Inspection Checklist
+
+Turbine state and LOTO confirmed
+
+Receptor location and span group recorded
+
+Photos taken before and after cleaning
+
+Pit size measured and recorded
+
+Surrounding area inspected within 50 mm
+
+Condition class assigned (R1-R4)
+5.2 Continuity Checklist
+
+Tester zero verified
+
+Resistance measured twice
+
+Pass/fail decision recorded (<=2.0 ohms pass)
+
+Failed units escalated with stop recommendation
+6.0 TROUBLESHOOTING
+6.1 Symptom: Continuity reading fluctuates
+Likely causes:
+Poor lead contact on receptor surface
+Corrosion at contact point
+Loose internal connection Checks:
+Re-clean contact point and re-seat probes
+Repeat measurement at least 2 times Actions:
+If stable and <=2.0 ohms after cleaning, record as pass with note
+If unstable or >2.0 ohms, treat as fail and escalate (Section 4.5)
+6.2 Symptom: Receptor appears intact but surrounding coating is blistered
+Likely causes:
+Heat damage from strike attachment nearby
+Moisture trapped under coating Checks:
+Inspect blister pattern, perform gentle tap test around blister zone Actions:
+If blister zone >25 cm2 or soft sound on tap test, stop and escalate
+6.3 Symptom: Receptor seat leaks (moisture around perimeter)
+
+=== PAGE 5 ===
+WTB-WI-LPS-303
+Version 1.6 | 2026-01-17
+Lightning Protection Receptors - Inspection, Testing, and Replace Criteria
+Page 5
+Likely causes:
+Sealant gap or poor adhesion Checks:
+Visual check for discontinuities, press test for sealant edge lift Actions:
+Clean and re-seal if no burn/crack is present; otherwise escalate
+7.0 CHANGE LOG
+7.1 Summary of Changes
+Added explicit resistance acceptance limit and retest requirement
+Added replace workflow and escalation triggers
+Expanded troubleshooting and documentation fields
+END OF DOCUMENT
+

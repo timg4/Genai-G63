@@ -14,15 +14,16 @@
   ],
   "min_page_tokens": 20,
   "min_alpha_ratio": 0.6,
+  "merge_min_tokens": 60,
   "manual_paths": [
-    "manuals/manuals_files\\manual-01.pdf",
-    "manuals/manuals_files\\manual-02.pdf",
-    "manuals/manuals_files\\manual-03.pdf",
-    "manuals/manuals_files\\manual-04.pdf",
-    "manuals/manuals_files\\manual-05-synthetic.pdf",
-    "manuals/manuals_files\\manual-06-synthetic.pdf",
-    "manuals/manuals_files\\manual-07-synthetic.pdf",
-    "manuals/manuals_files\\manual-08-synthetic.pdf"
+    "manuals\\manuals_text\\manual-01.txt",
+    "manuals\\manuals_text\\manual-02.txt",
+    "manuals\\manuals_text\\manual-03.txt",
+    "manuals\\manuals_text\\manual-04.txt",
+    "manuals\\manuals_text\\manual-05-synthetic.txt",
+    "manuals\\manuals_text\\manual-06-synthetic.txt",
+    "manuals\\manuals_text\\manual-07-synthetic.txt",
+    "manuals\\manuals_text\\manual-08-synthetic.txt"
   ],
-  "num_chunks": 242
+  "num_chunks": 309
 }

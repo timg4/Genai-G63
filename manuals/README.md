@@ -18,6 +18,16 @@ pip install -r requirements.txt
 python rag_cli.py build --manuals-dir "manuals_files" --index-dir "./manuals_index"
 ```
 
+## Optional: Export PDFs to .txt (recommended)
+
+Exporting to `.txt` can reduce PDF extraction noise (headers/footers, table layout artifacts) and make
+section splits more consistent.
+
+```bash
+python rag_cli.py export-txt --manuals-dir "manuals_files" --out-dir "manuals_text"
+python rag_cli.py build --manuals-dir "manuals_text" --index-dir "./manuals_index" --section-chunks
+```
+
 Optional knobs:
 - `--model` sentence-transformers model (default: `all-MiniLM-L6-v2`)
 - `--chunk-size` target chunk size in whitespace tokens (default: 450)
@@ -28,6 +38,7 @@ Optional knobs:
 - `--skip-page-manuals` base filenames that skip leading pages (default: `manual-02.pdf`)
 - `--min-page-tokens` drop pages with too little text (default: 20)
 - `--min-alpha-ratio` drop low-text/number-heavy sections (default: 0.6)
+- Manuals are expected under `manuals/manuals_files/` (e.g., `manual-01.pdf` .. `manual-08-synthetic.pdf`).
 
 Artifacts written to `./manuals_index`:
 - `index.faiss`

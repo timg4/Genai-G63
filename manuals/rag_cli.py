@@ -5,6 +5,7 @@ import os
 from rag_core import (
     build_index,
     evaluate_retrieval,
+    export_manuals_to_txt,
     generate_grounded_report,
     setup_logging,
     Retriever,
@@ -176,6 +177,29 @@ def parse_args():
         help="Number of chunks to retrieve for evaluation.",
     )
 
+    export_parser = subparsers.add_parser("export-txt", help="Export manuals (PDF/text) to plain .txt.")
+    export_parser.add_argument(
+        "--manuals",
+        nargs="+",
+        required=False,
+        help="Paths to manuals (PDF or text).",
+    )
+    export_parser.add_argument(
+        "--manuals-dir",
+        default=None,
+        help="Directory containing manuals to export.",
+    )
+    export_parser.add_argument(
+        "--out-dir",
+        required=True,
+        help="Output directory for exported .txt files.",
+    )
+    export_parser.add_argument(
+        "--overwrite",
+        action="store_true",
+        help="Overwrite existing .txt files in out dir.",
+    )
+
     return parser.parse_args()
 
 
@@ -261,6 +285,28 @@ def main():
             top_k=args.top_k,
         )
         print(json.dumps(metrics, ensure_ascii=True, indent=2))
+        return
+
+    if args.command == "export-txt":
+        manual_paths = []
+        if args.manuals:
+            manual_paths.extend(args.manuals)
+        if args.manuals_dir:
+            if not os.path.isdir(args.manuals_dir):
+                raise ValueError(f"Manuals directory not found: {args.manuals_dir}")
+            entries = sorted(os.listdir(args.manuals_dir))
+            for name in entries:
+                ext = os.path.splitext(name)[1].lower()
+                if ext in {".pdf", ".txt"}:
+                    manual_paths.append(os.path.join(args.manuals_dir, name))
+        if not manual_paths:
+            raise ValueError("No manuals provided. Use --manuals or --manuals-dir.")
+        exported = export_manuals_to_txt(
+            manual_paths=manual_paths,
+            out_dir=args.out_dir,
+            overwrite=args.overwrite,
+        )
+        print(json.dumps({"exported": exported}, ensure_ascii=True, indent=2))
         return
 
     raise ValueError(f"Unknown command: {args.command}")
